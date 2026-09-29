@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lethio Macro Tracker</string>
+
+    <string name="nav_goals">Mål</string>
+    <string name="nav_settings">Innstillinger</string>
+
+    <string name="add_food">Legg til mat</string>
+    <string name="scan_barcode">Skann strekkode</string>
+    <string name="search_foods">Søk etter mat</string>
+    <string name="quick_add">Hurtiglegg til</string>
+    <string name="favorites">Favoritter</string>
+    <string name="recent">Nylige</string>
+
+    <string name="calories">Kalorier</string>
+    <string name="protein">Protein</string>
+    <string name="fat">Fett</string>
+    <string name="carbs">Karbohydrater</string>
+    <string name="grams_short">g</string>
+
+    <string name="breakfast">Frokost</string>
+    <string name="lunch">Lunsj</string>
+    <string name="dinner">Middag</string>
+    <string name="snacks">Snacks</string>
+
+    <string name="of_kcal">av %1$d %2$s</string>
+    <string name="kcal_remaining">%1$d igjen</string>
+    <string name="no_items_logged">Ingen elementer logget</string>
+
+    <string name="save">Lagre</string>
+    <string name="cancel">Avbryt</string>
+    <string name="edit">Rediger</string>
+    <string name="log_food">Logg mat</string>
+    <string name="loading">Laster\u2026</string>
+
+    <string name="back_cd">Tilbake</string>
+    <string name="delete_cd">Slett</string>
+    <string name="clear_cd">Tøm</string>
+
+    <string name="search_hint">Søk etter mat\u2026</string>
+    <string name="no_results">Ingen resultater funnet</string>
+
+    <string name="point_camera_at_barcode">Pek kameraet mot strekkoden</string>
+    <string name="grant_permission">Gi tillatelse</string>
+    <string name="looking_up_barcode">Slår opp %1$s\u2026</string>
+    <string name="add_manually">Legg til manuelt</string>
+    <string name="scan_again">Skann igjen</string>
+    <string name="camera_permission_required">Kameratillatelse kreves for å skanne strekkoder</string>
+    <string name="barcode_not_found">Strekkode ikke funnet i databasen</string>
+
+    <string name="amount_grams">Mengde (g)</string>
+    <string name="meal">Måltid</string>
+    <string name="nutrition_for_grams">Næring for %1$dg</string>
+
+    <string name="food_name_label">Matnavn</string>
+    <string name="protein_g">Protein (g)</string>
+    <string name="fat_g">Fett (g)</string>
+    <string name="carbs_g">Karbohydrater (g)</string>
+    <string name="calories_kcal">Kalorier (kcal)</string>
+
+    <string name="no_history">Ingen historikk ennå. Begynn å logge!</string>
+
+    <string name="daily_goals">Daglige mål</string>
+    <string name="save_goals">Lagre mål</string>
+    <string name="goals_saved">Mål lagret!</string>
+
+    <string name="export_csv">Eksporter til CSV</string>
+    <string name="export_csv_subtitle">Lagre alle loggdata som en CSV-fil</string>
+    <string name="dark_mode">Mørk modus</string>
+    <string name="about">Om</string>
+    <string name="about_subtitle">%1$s v%2$s: Frakoblet som standard, ingen kontoer, ingen sporing</string>
+    <string name="serving_size">Porsjonsstørrelse</string>
+    <string name="amount">Mengde</string>
+    <string name="daily_target">Daglig mål</string>
+    <string name="food_logged">Mat logget</string>
+    <string name="goal_saved">Mål lagret</string>
+
+    <string name="language">Språk</string>
+    <string name="language_system">Systemstandard</string>
+    <string name="language_en">English</string>
+    <string name="language_nb">Norsk Bokmål</string>
+    <string name="language_pt">Português</string>
+    <string name="language_fr">Français</string>
+    <string name="language_de">Deutsch</string>
+    <string name="language_es">Español</string>
+    <string name="language_sv">Svenska</string>
+    <string name="language_it">Italiano</string>
+
+    <string name="portion_serving">porsjon</string>
+    <string name="portion_cup">kopp</string>
+    <string name="portion_tablespoon">spiseskje</string>
+    <string name="portion_teaspoon">teskje</string>
+    <string name="portion_slice">skive</string>
+    <string name="portion_piece">stykke</string>
+    <string name="portion_unit">enhet</string>
+    <string name="portion_bar">bar</string>
+    <string name="portion_bottle">flaske</string>
+    <string name="portion_can">boks</string>
+    <string name="portion_package">pakke</string>
+    <string name="portion_small">liten</string>
+    <string name="portion_medium">medium</string>
+    <string name="portion_large">stor</string>
+    <string name="portion_steak">biff</string>
+    <string name="portion_roast">stek</string>
+    <string name="portion_fillet">filet</string>
+    <string name="portion_jar">glass</string>
+    <string name="portion_extra_small">ekstra liten</string>
+    <string name="portion_extra_large">ekstra stor</string>
+    <string name="mass_unit_title">Vekt og høyde</string>
+    <string name="mass_unit_metric">Kilogram og centimeter</string>
+    <string name="mass_unit_imperial_us">Pund, fot og tommer (USA)</string>
+    <string name="mass_unit_imperial_uk">Stone, fot og tommer (Storbritannia)</string>
+    <string name="energy_unit_title">Energienhet</string>
+    <string name="energy_unit_kcal">Kilokalorier (kcal)</string>
+    <string name="energy_unit_kj">Kilojoule (kJ)</string>
+
+    <string name="nav_diary">Dagbok</string>
+    <string name="nav_search">Søk</string>
+    <string name="nav_scan">Skann</string>
+    <string name="add_favorite_cd">Legg til i favoritter</string>
+    <string name="remove_favorite_cd">Fjern fra favoritter</string>
+    <string name="previous_day_cd">Forrige dag</string>
+    <string name="next_day_cd">Neste dag</string>
+    <string name="jump_to_date_cd">Hopp til en dato</string>
+    <string name="jump_to_today_cd">Hopp til i dag</string>
+    <string name="calorie_summary_cd">%1$d av %2$d kilokalorier, %3$d gjenstår</string>
+    <string name="macro_progress_cd">%1$d av %2$d gram</string>
+    <string name="macro_breakdown_cd">%1$d gram protein, %2$d gram fett, %3$d gram karbohydrater</string>
+    <string name="nothing_logged_this_day">Ingenting er registrert for denne dagen ennå.</string>
+    <string name="today_label">I dag</string>
+    <string name="logging_for_date">Registrerer for %1$s</string>
+    <string name="no_results_in_database">Ingenting i %1$s passer med søket.</string>
+    <string name="no_results_in_database_language">%1$s er skrevet på %2$s. Prøv det ordet på %2$s.</string>
+    <string name="no_results_widen">Søk i alle databaser</string>
+    <string name="results_borrowed">Ingenting i %1$s. Viser andre databaser på ditt språk.</string>
+    <string name="search_to_get_started">Søk etter en matvare for å komme i gang. Matvarer du registrerer, vises her.</string>
+    <string name="add_query_manually">Legg til «%1$s» manuelt</string>
+    <string name="data_sources">Datakilder</string>
+    <string name="data_sources_subtitle">Hvor ernæringsdataene kommer fra, og hvilke lisenser som gjelder</string>
+    <string name="data_sources_intro">Ernæringsdataene i denne appen kommer fra nasjonale næringsmiddeltabeller og Open Food Facts. Hver kilde oppgis nedenfor i samsvar med publiseringsvilkårene.</string>
+    <string name="generic_food_database">Generisk matdatabase</string>
+    <string name="country_system">Systemstandard</string>
+    <string name="country_system_resolved">Tilsvarer for øyeblikket %1$s.</string>
+    <string name="database_language">Matnavn vises på %1$s.</string>
+    <string name="generic_database_explainer">Brukes for vanlige matvarer. Merkevareprodukter fra Open Food Facts er fortsatt tilgjengelige. Angis automatisk ved første oppstart, med mindre telefonens språk og mobiloperatør ikke stemmer overens. I så fall blir du spurt én gang.</string>
+    <string name="choose_database_title">Hvilken matdatabase?</string>
+    <string name="choose_database_body">Matdatabasen din kan være enten %1$s eller %2$s. Velg den som stemmer med hvor du faktisk handler. Du kan endre dette når som helst i Innstillinger.</string>
+    <string name="choose_database_confirm">Bruk denne databasen</string>
+    <string name="choose_database_skip">Bestem senere</string>
+    <string name="country_us">USA</string>
+    <string name="country_fr">Frankrike</string>
+    <string name="country_de">Tyskland</string>
+    <string name="country_es">Spania</string>
+    <string name="country_uk">Storbritannia</string>
+    <string name="country_au">Australia</string>
+    <string name="country_ca">Canada</string>
+    <string name="country_ch">Sveits</string>
+    <string name="country_dk">Danmark</string>
+    <string name="country_fi">Finland</string>
+    <string name="country_no">Norge</string>
+    <string name="country_pt">Portugal</string>
+    <string name="country_se">Sverige</string>
+    <string name="undo">Angre</string>
+    <string name="entry_deleted">Oppføring slettet</string>
+    <string name="per_100g">per 100 g</string>
+    <string name="export_nothing">Ingenting å eksportere ennå</string>
+    <string name="export_failed">Eksport mislyktes</string>
+    <string name="go_back">Gå tilbake</string>
+    <string name="energy_kcal">kcal</string>
+    <string name="energy_kj">kJ</string>
+    <string name="millilitres_short">ml</string>
+    <string name="ounces_short">oz</string>
+    <string name="nutrition_for">Næringsinnhold for %1$s (%2$d g)</string>
+    <string name="food_unavailable">Denne matvaren er ikke lenger tilgjengelig</string>
+    <string name="food_unavailable_detail">Den ble fjernet da matdatabasen ble oppdatert, eller slettet fra dine egne matvarer. Måltider du allerede har registrert, er ikke påvirket. De beholder sin egen kopi av næringsverdiene.</string>
+    <string name="value_must_be_zero_or_more">Angi et tall på null eller mer.</string>
+    <string name="amount_unit_not_convertible">Vekten til denne matvaren i den enheten er ukjent. Velg en annen enhet.</string>
+    <string name="value_looks_unusually_large">Det er en veldig stor mengde. Verdt et nytt blikk.</string>
+    <string name="energy_does_not_match_macros">Disse makroene tilsvarer omtrent %1$d kcal.</string>
+    <string name="carb_label_includes_fibre">karbo. inkl. fiber</string>
+    <string name="carb_label_monosaccharide">karbo., sukkerekviv.</string>
+
+    <string name="help_me_pick">Hjelp meg å velge et mål</string>
+    <string name="goal_wizard_title">Anslå et mål</string>
+    <string name="goal_wizard_intro">Svar på det du kan. Du kan endre tallene før du lagrer.</string>
+    <string name="weight_kg">Vekt (kg)</string>
+    <string name="weight_lb">Vekt (lb)</string>
+    <string name="height_cm">Høyde (cm)</string>
+
+    <string name="weight_stone">st</string>
+    <string name="weight_pounds">lb</string>
+    <string name="height_feet">ft</string>
+    <string name="height_inches">in</string>
+    <string name="age_years">Alder (år)</string>
+    <string name="sex_label">Kjønn</string>
+    <string name="sex_female">Kvinne</string>
+    <string name="sex_male">Mann</string>
+    <string name="sex_unspecified">Uspesifisert</string>
+    <string name="sex_explainer">Brukes bare til å anslå hvilestoffskiftet. Uspesifisert bruker gjennomsnittet av de to verdiene ligningen har.</string>
+    <string name="sex_unused">Brukes ikke så lenge fettprosent er fylt ut. Tøm feltet for å bruke dette i stedet.</string>
+    <string name="body_fat_percent">Fettprosent</string>
+    <string name="body_fat_optional">Valgfritt. Hvis du vet den, erstatter den spørsmålet over og gir et bedre anslag.</string>
+    <string name="activity_level">Aktivitet</string>
+    <string name="activity_sedentary">Stillesittende</string>
+    <string name="activity_light">Lett aktiv</string>
+    <string name="activity_moderate">Moderat aktiv</string>
+    <string name="activity_active">Aktiv</string>
+    <string name="activity_very_active">Svært aktiv</string>
+    <string name="goal_direction">Mål</string>
+    <string name="goal_lose">Gå ned i vekt</string>
+    <string name="goal_maintain">Holde vekten</string>
+    <string name="goal_gain">Gå opp i vekt</string>
+    <string name="rate_kg_per_week">Tempo (kg per uke)</string>
+    <string name="rate_lb_per_week">Tempo (lb per uke)</string>
+    <string name="goal_wizard_result">Omtrent %1$d kcal per dag</string>
+    <string name="goal_wizard_estimate_mifflin">Anslått med Mifflin-St Jeor-ligningen. Kontroller det mot vekta over noen uker.</string>
+    <string name="goal_wizard_estimate_katch">Anslått med Katch-McArdle-ligningen, som bruker fettfri masse i stedet for kjønn. Kontroller det mot vekta over noen uker.</string>
+    <string name="use_these_targets">Bruk disse målene</string>
+    <string name="calories_below_safe_minimum">Mål under %1$d kcal per dag krever medisinsk oppfølging, så denne appen setter det ikke.</string>
+    <string name="calories_below_floor">Under %1$d kcal per dag er det vanskelig å få nok vitaminer og mineraler fra maten.</string>
+
+    <string name="off_lookup_title">Slå opp i Open Food Facts?</string>
+    <string name="off_lookup_offer">Slå opp dette i Open Food Facts</string>
+    <string name="off_lookup_explainer">Open Food Facts er en fri og åpen database over matvarer. Hvis du slår på dette, kan appen spørre den om en strekkode denne telefonen ikke kjenner igjen.\n\nBare strekkodenummeret sendes til Open Food Facts, og bare når du trykker på knappen. Forespørselen inneholder ingen konto, annonse-ID eller dagbokdata. Strekkodeskannerens separate diagnostikktrafikk til Google styres ikke av denne innstillingen.\n\nDu kan slå det av igjen i Innstillinger.</string>
+    <string name="off_lookup_enable">Slå på</string>
+    <string name="look_up_online">Slå opp i Open Food Facts</string>
+    <string name="off_lookup_nothing_found">Open Food Facts har heller ikke brukbare opplysninger om denne strekkoden.</string>
+    <string name="off_lookup_unavailable">Fikk ikke kontakt med Open Food Facts. Sjekk tilkoblingen, eller legg til matvaren manuelt.</string>
+    <string name="off_lookup_running">Kontakter Open Food Facts…</string>
+    <string name="settings_off_lookup">Slå opp ukjente strekkoder på nett</string>
+    <string name="settings_off_lookup_summary">Spør Open Food Facts om en strekkode denne telefonen ikke kjenner igjen. Sender bare strekkoden, og bare når du trykker på knappen etter en skanning uten treff. Av som standard.</string>
+
+    <string name="add_product">Legg til produkt</string>
+    <string name="barcode_label">Strekkode: %1$s</string>
+    <string name="brand_label">Merke (valgfritt)</string>
+    <string name="per_100g_header">Per 100 g</string>
+    <string name="save_product">Lagre produkt</string>
+    <string name="contribute_to_off">Send også til Open Food Facts</string>
+    <string name="contribute_to_off_detail">Publiserer dette produktet i Open Food Facts, slik at andre også kan finne det. Sender strekkoden, navnet, merket og verdiene over via Lethio, sammen med en tilfeldig app-identifikator som brukes til å moderere bidrag. Dagboken din sendes ikke.</string>
+    <string name="contribute_not_sent_title">Ikke lagt til i Open Food Facts</string>
+    <string name="contribute_unconfirmed_title">Bidraget er ikke bekreftet</string>
+    <string name="contribute_sent_title">Sendt til Open Food Facts</string>
+    <string name="contribute_accepted">Takk — dette produktet ligger nå i den åpne databasen, for alle.</string>
+    <string name="continue_to_log">Fortsett</string>
+    <string name="contribute_refused">Dette produktet ble ikke godkjent som bidrag. Det er lagret på telefonen, og du kan bruke det som vanlig.</string>
+    <string name="contribute_unavailable">Det var ikke mulig å bekrefte om Open Food Facts mottok dette produktet. Det er lagret på telefonen. Sjekk Open Food Facts før du prøver igjen.</string>
+    <string name="settings_off_contribute">Bidra med nye produkter</string>
+    <string name="settings_off_contribute_summary">Lar appen tilby å dele et produkt med Open Food Facts når det ikke finnes en brukbar oppføring for strekkoden. Du velger for hvert produkt med en avkrysningsboks som ikke er krysset av i utgangspunktet. Av som standard og uavhengig av nettsøk.</string>
+    <string name="ok">OK</string>
+    <string name="searching_announcement">Søker</string>
+    <plurals name="search_results_count">
+        <item quantity="one">%1$d treff</item>
+        <item quantity="other">%1$d treff</item>
+    </plurals>
+</resources>

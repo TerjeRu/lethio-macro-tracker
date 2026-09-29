@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lethio Macro Tracker</string>
+
+    <string name="nav_goals">Mål</string>
+    <string name="nav_settings">Inställningar</string>
+
+    <string name="add_food">Lägg till livsmedel</string>
+    <string name="scan_barcode">Skanna streckkod</string>
+    <string name="search_foods">Sök livsmedel</string>
+    <string name="quick_add">Snabbtillägg</string>
+    <string name="favorites">Favoriter</string>
+    <string name="recent">Senaste</string>
+
+    <string name="calories">Kalorier</string>
+    <string name="protein">Protein</string>
+    <string name="fat">Fett</string>
+    <string name="carbs">Kolhydrater</string>
+    <string name="grams_short">g</string>
+
+    <string name="breakfast">Frukost</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Middag</string>
+    <string name="snacks">Mellanmål</string>
+
+    <string name="of_kcal">av %1$d %2$s</string>
+    <string name="kcal_remaining">%1$d kvar</string>
+    <string name="no_items_logged">Inga livsmedel loggade</string>
+
+    <string name="save">Spara</string>
+    <string name="cancel">Avbryt</string>
+    <string name="edit">Redigera</string>
+    <string name="log_food">Logga livsmedel</string>
+    <string name="loading">Laddar\u2026</string>
+
+    <string name="back_cd">Tillbaka</string>
+    <string name="delete_cd">Ta bort</string>
+    <string name="clear_cd">Rensa</string>
+
+    <string name="search_hint">Sök livsmedel\u2026</string>
+    <string name="no_results">Inga resultat hittades</string>
+
+    <string name="point_camera_at_barcode">Rikta kameran mot en streckkod</string>
+    <string name="grant_permission">Bevilja behörighet</string>
+    <string name="looking_up_barcode">Söker efter %1$s\u2026</string>
+    <string name="add_manually">Lägg till manuellt</string>
+    <string name="scan_again">Skanna igen</string>
+    <string name="camera_permission_required">Kamerabehörighet krävs för att skanna streckkoder</string>
+    <string name="barcode_not_found">Streckkod hittades inte i databasen</string>
+
+    <string name="amount_grams">Mängd (g)</string>
+    <string name="meal">Måltid</string>
+    <string name="nutrition_for_grams">Näringsvärden för %1$dg</string>
+
+    <string name="food_name_label">Livsmedelsnamn</string>
+    <string name="protein_g">Protein (g)</string>
+    <string name="fat_g">Fett (g)</string>
+    <string name="carbs_g">Kolhydrater (g)</string>
+    <string name="calories_kcal">Kalorier (kcal)</string>
+
+    <string name="no_history">Ingen historik ännu. Börja logga!</string>
+
+    <string name="daily_goals">Dagliga mål</string>
+    <string name="save_goals">Spara mål</string>
+    <string name="goals_saved">Mål sparade!</string>
+
+    <string name="export_csv">Exportera till CSV</string>
+    <string name="export_csv_subtitle">Spara all loggdata som en CSV-fil</string>
+    <string name="dark_mode">Mörkt läge</string>
+    <string name="about">Om</string>
+    <string name="about_subtitle">%1$s v%2$s: Offline som standard, inga konton, ingen spårning</string>
+    <string name="serving_size">Portionsstorlek</string>
+    <string name="amount">Mängd</string>
+    <string name="daily_target">Dagligt mål</string>
+    <string name="food_logged">Livsmedel loggat</string>
+    <string name="goal_saved">Mål sparat</string>
+
+    <string name="language">Språk</string>
+    <string name="language_system">Systemstandard</string>
+    <string name="language_en">English</string>
+    <string name="language_nb">Norsk Bokmål</string>
+    <string name="language_pt">Português</string>
+    <string name="language_fr">Français</string>
+    <string name="language_de">Deutsch</string>
+    <string name="language_es">Español</string>
+    <string name="language_sv">Svenska</string>
+    <string name="language_it">Italiano</string>
+
+    <string name="portion_serving">portion</string>
+    <string name="portion_cup">kopp</string>
+    <string name="portion_tablespoon">matsked</string>
+    <string name="portion_teaspoon">tesked</string>
+    <string name="portion_slice">skiva</string>
+    <string name="portion_piece">bit</string>
+    <string name="portion_unit">enhet</string>
+    <string name="portion_bar">bar</string>
+    <string name="portion_bottle">flaska</string>
+    <string name="portion_can">burk</string>
+    <string name="portion_package">förpackning</string>
+    <string name="portion_small">liten</string>
+    <string name="portion_medium">medium</string>
+    <string name="portion_large">stor</string>
+    <string name="portion_steak">biff</string>
+    <string name="portion_roast">stek</string>
+    <string name="portion_fillet">filé</string>
+    <string name="portion_jar">burk</string>
+    <string name="portion_extra_small">extra liten</string>
+    <string name="portion_extra_large">extra stor</string>
+    <string name="mass_unit_title">Vikt och längd</string>
+    <string name="mass_unit_metric">Kilogram och centimeter</string>
+    <string name="mass_unit_imperial_us">Pund, fot och tum (USA)</string>
+    <string name="mass_unit_imperial_uk">Stone, fot och tum (Storbritannien)</string>
+    <string name="energy_unit_title">Energienhet</string>
+    <string name="energy_unit_kcal">Kilokalorier (kcal)</string>
+    <string name="energy_unit_kj">Kilojoule (kJ)</string>
+
+    <string name="nav_diary">Dagbok</string>
+    <string name="nav_search">Sök</string>
+    <string name="nav_scan">Skanna</string>
+    <string name="add_favorite_cd">Lägg till i favoriter</string>
+    <string name="remove_favorite_cd">Ta bort från favoriter</string>
+    <string name="previous_day_cd">Föregående dag</string>
+    <string name="next_day_cd">Nästa dag</string>
+    <string name="jump_to_date_cd">Hoppa till ett datum</string>
+    <string name="jump_to_today_cd">Hoppa till idag</string>
+    <string name="calorie_summary_cd">%1$d av %2$d kilokalorier, %3$d kvar</string>
+    <string name="macro_progress_cd">%1$d av %2$d gram</string>
+    <string name="macro_breakdown_cd">%1$d gram protein, %2$d gram fett, %3$d gram kolhydrater</string>
+    <string name="nothing_logged_this_day">Inget har registrerats för den här dagen än.</string>
+    <string name="today_label">Idag</string>
+    <string name="logging_for_date">Loggar för %1$s</string>
+    <string name="no_results_in_database">Inget i %1$s matchar sökningen.</string>
+    <string name="no_results_in_database_language">%1$s är skrivet på %2$s. Prova det ordet på %2$s.</string>
+    <string name="no_results_widen">Sök i alla databaser</string>
+    <string name="results_borrowed">Inget i %1$s. Visar andra databaser på ditt språk.</string>
+    <string name="search_to_get_started">Sök efter ett livsmedel för att komma igång. Livsmedel du loggar visas här.</string>
+    <string name="add_query_manually">Lägg till ”%1$s” manuellt</string>
+    <string name="data_sources">Datakällor</string>
+    <string name="data_sources_subtitle">Varifrån näringsuppgifterna kommer och vilka licenser som gäller</string>
+    <string name="data_sources_intro">Näringsuppgifterna i den här appen kommer från nationella livsmedelstabeller och Open Food Facts. Varje källa anges nedan enligt de villkor som gäller för publiceringen.</string>
+    <string name="generic_food_database">Generisk livsmedelsdatabas</string>
+    <string name="country_system">Systemstandard</string>
+    <string name="country_system_resolved">Motsvarar för närvarande %1$s.</string>
+    <string name="database_language">Livsmedelsnamn visas på %1$s.</string>
+    <string name="generic_database_explainer">Används för vanliga livsmedel. Märkesprodukter från Open Food Facts finns fortfarande tillgängliga. Ställs in automatiskt vid första start, om inte telefonens språk och mobiloperatör stämmer överens. I så fall tillfrågas du en gång.</string>
+    <string name="choose_database_title">Vilken livsmedelsdatabas?</string>
+    <string name="choose_database_body">Din livsmedelsdatabas skulle kunna vara antingen %1$s eller %2$s. Välj den som stämmer med var du faktiskt handlar. Du kan ändra detta när som helst i Inställningar.</string>
+    <string name="choose_database_confirm">Använd den här databasen</string>
+    <string name="choose_database_skip">Bestäm senare</string>
+    <string name="country_us">USA</string>
+    <string name="country_fr">Frankrike</string>
+    <string name="country_de">Tyskland</string>
+    <string name="country_es">Spanien</string>
+    <string name="country_uk">Storbritannien</string>
+    <string name="country_au">Australien</string>
+    <string name="country_ca">Kanada</string>
+    <string name="country_ch">Schweiz</string>
+    <string name="country_dk">Danmark</string>
+    <string name="country_fi">Finland</string>
+    <string name="country_no">Norge</string>
+    <string name="country_pt">Portugal</string>
+    <string name="country_se">Sverige</string>
+    <string name="undo">Ångra</string>
+    <string name="entry_deleted">Post borttagen</string>
+    <string name="per_100g">per 100 g</string>
+    <string name="export_nothing">Inget att exportera än</string>
+    <string name="export_failed">Export misslyckades</string>
+    <string name="go_back">Gå tillbaka</string>
+    <string name="energy_kcal">kcal</string>
+    <string name="energy_kj">kJ</string>
+    <string name="millilitres_short">ml</string>
+    <string name="ounces_short">oz</string>
+    <string name="nutrition_for">Näringsvärde för %1$s (%2$d g)</string>
+    <string name="food_unavailable">Det här livsmedlet är inte längre tillgängligt</string>
+    <string name="food_unavailable_detail">Det togs bort när livsmedelsdatabasen uppdaterades eller raderades från dina egna livsmedel. Måltider du redan har loggat påverkas inte. De behåller sin egen kopia av näringsvärdena.</string>
+    <string name="value_must_be_zero_or_more">Ange ett tal på noll eller mer.</string>
+    <string name="amount_unit_not_convertible">Vikten för det här livsmedlet i den enheten är okänd. Välj en annan enhet.</string>
+    <string name="value_looks_unusually_large">Det är en väldigt stor mängd. Värt en extra koll.</string>
+    <string name="energy_does_not_match_macros">Dessa makron motsvarar ungefär %1$d kcal.</string>
+    <string name="carb_label_includes_fibre">kolhydr. inkl. fiber</string>
+    <string name="carb_label_monosaccharide">kolhydr., sockerekviv.</string>
+
+    <string name="help_me_pick">Hjälp mig välja ett mål</string>
+    <string name="goal_wizard_title">Uppskatta ett mål</string>
+    <string name="goal_wizard_intro">Svara på det du kan. Du kan ändra siffrorna innan du sparar.</string>
+    <string name="weight_kg">Vikt (kg)</string>
+    <string name="weight_lb">Vikt (lb)</string>
+    <string name="height_cm">Längd (cm)</string>
+
+    <string name="weight_stone">st</string>
+    <string name="weight_pounds">lb</string>
+    <string name="height_feet">ft</string>
+    <string name="height_inches">in</string>
+    <string name="age_years">Ålder (år)</string>
+    <string name="sex_label">Kön</string>
+    <string name="sex_female">Kvinna</string>
+    <string name="sex_male">Man</string>
+    <string name="sex_unspecified">Ospecificerat</string>
+    <string name="sex_explainer">Används bara för att uppskatta ämnesomsättningen i vila. Ospecificerat tar medelvärdet av de två värden ekvationen har.</string>
+    <string name="sex_unused">Används inte så länge kroppsfettprocent är ifylld. Töm fältet för att använda det här i stället.</string>
+    <string name="body_fat_percent">Kroppsfettprocent</string>
+    <string name="body_fat_optional">Valfritt. Om du vet den ersätter den frågan ovan och ger en bättre uppskattning.</string>
+    <string name="activity_level">Aktivitet</string>
+    <string name="activity_sedentary">Stillasittande</string>
+    <string name="activity_light">Lätt aktiv</string>
+    <string name="activity_moderate">Måttligt aktiv</string>
+    <string name="activity_active">Aktiv</string>
+    <string name="activity_very_active">Mycket aktiv</string>
+    <string name="goal_direction">Mål</string>
+    <string name="goal_lose">Gå ner i vikt</string>
+    <string name="goal_maintain">Behålla vikten</string>
+    <string name="goal_gain">Gå upp i vikt</string>
+    <string name="rate_kg_per_week">Takt (kg per vecka)</string>
+    <string name="rate_lb_per_week">Takt (lb per vecka)</string>
+    <string name="goal_wizard_result">Ungefär %1$d kcal per dag</string>
+    <string name="goal_wizard_estimate_mifflin">Uppskattat med Mifflin-St Jeors ekvation. Stäm av det mot vågen under några veckor.</string>
+    <string name="goal_wizard_estimate_katch">Uppskattat med Katch-McArdles ekvation, som använder fettfri massa i stället för kön. Stäm av det mot vågen under några veckor.</string>
+    <string name="use_these_targets">Använd de här målen</string>
+    <string name="calories_below_safe_minimum">Mål under %1$d kcal per dag kräver medicinsk uppföljning, så den här appen sätter inga sådana.</string>
+    <string name="calories_below_floor">Under %1$d kcal per dag är det svårt att få i sig tillräckligt med vitaminer och mineraler från maten.</string>
+
+    <string name="off_lookup_title">Slå upp i Open Food Facts?</string>
+    <string name="off_lookup_offer">Slå upp detta i Open Food Facts</string>
+    <string name="off_lookup_explainer">Open Food Facts är en fri och öppen databas över livsmedel. Om du slår på detta kan appen fråga den om en streckkod som den här telefonen inte känner igen.\n\nEndast streckkodsnumret skickas till Open Food Facts, och bara när du trycker på knappen. Den begäran innehåller inget konto, annons-ID eller några dagboksdata. Streckkodsläsarens separata diagnostiktrafik till Google styrs inte av den här inställningen.\n\nDu kan stänga av det igen i Inställningar.</string>
+    <string name="off_lookup_enable">Slå på</string>
+    <string name="look_up_online">Slå upp i Open Food Facts</string>
+    <string name="off_lookup_nothing_found">Open Food Facts har inte heller användbara uppgifter om den här streckkoden.</string>
+    <string name="off_lookup_unavailable">Kunde inte nå Open Food Facts. Kontrollera anslutningen eller lägg till livsmedlet manuellt.</string>
+    <string name="off_lookup_running">Kontaktar Open Food Facts…</string>
+    <string name="settings_off_lookup">Slå upp okända streckkoder online</string>
+    <string name="settings_off_lookup_summary">Fråga Open Food Facts om en streckkod som den här telefonen inte känner igen. Skickar bara streckkoden, och bara när du trycker på knappen efter en skanning utan träff. Av som standard.</string>
+
+    <string name="add_product">Lägg till produkt</string>
+    <string name="barcode_label">Streckkod: %1$s</string>
+    <string name="brand_label">Varumärke (valfritt)</string>
+    <string name="per_100g_header">Per 100 g</string>
+    <string name="save_product">Spara produkt</string>
+    <string name="contribute_to_off">Skicka även till Open Food Facts</string>
+    <string name="contribute_to_off_detail">Publicerar den här produkten i Open Food Facts så att andra också kan hitta den. Skickar streckkoden, namnet, varumärket och värdena ovan via Lethio, tillsammans med en slumpmässig appidentifierare som används för att moderera bidrag. Din dagbok skickas inte.</string>
+    <string name="contribute_not_sent_title">Inte tillagd i Open Food Facts</string>
+    <string name="contribute_unconfirmed_title">Bidraget är inte bekräftat</string>
+    <string name="contribute_sent_title">Skickad till Open Food Facts</string>
+    <string name="contribute_accepted">Tack — den här produkten finns nu i den öppna databasen, för alla.</string>
+    <string name="continue_to_log">Fortsätt</string>
+    <string name="contribute_refused">Den här produkten godkändes inte som bidrag. Den är sparad på telefonen och du kan fortsätta använda den som vanligt.</string>
+    <string name="contribute_unavailable">Det gick inte att bekräfta om Open Food Facts tog emot den här produkten. Den är sparad på telefonen. Kontrollera Open Food Facts innan du försöker igen.</string>
+    <string name="settings_off_contribute">Bidra med nya produkter</string>
+    <string name="settings_off_contribute_summary">Låter appen erbjuda delning av en produkt med Open Food Facts när det inte finns någon användbar post för streckkoden. Du väljer för varje produkt med en kryssruta som inte är markerad från början. Av som standard och oberoende av onlinesökning.</string>
+    <string name="ok">OK</string>
+    <string name="searching_announcement">Söker</string>
+    <plurals name="search_results_count">
+        <item quantity="one">%1$d träff</item>
+        <item quantity="other">%1$d träffar</item>
+    </plurals>
+</resources>

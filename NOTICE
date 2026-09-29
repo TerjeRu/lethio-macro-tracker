@@ -1,0 +1,12 @@
+Original Lethio application and tooling code: MIT (see LICENSE).
+
+Gradle wrapper components: copyright their respective authors, Apache-2.0.
+See LICENSES/Apache-2.0.txt and the notices in the wrapper scripts.
+
+AndroidX, Jetpack Compose, Room, CameraX, Hilt navigation integration: Apache-2.0.
+Kotlin, Kotlin serialization, Kotlin coroutines: Apache-2.0.
+Dagger / Hilt, KSP, OkHttp, Okio: Apache-2.0.
+SQLite engine: public domain (https://www.sqlite.org/copyright.html).
+Google ML Kit: https://developers.google.com/ml-kit/terms.
+
+Nutrition data terms and attribution: LICENSES/Nutrition-data.txt.

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lethio Macro Tracker</string>
+
+    <string name="nav_diary">Diary</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_scan">Scan</string>
+    <string name="nav_goals">Goals</string>
+    <string name="nav_settings">Settings</string>
+
+    <string name="add_food">Add Food</string>
+    <string name="scan_barcode">Scan Barcode</string>
+    <string name="search_foods">Search Foods</string>
+    <string name="quick_add">Quick Add</string>
+    <string name="favorites">Favorites</string>
+    <string name="recent">Recent</string>
+
+    <string name="calories">Calories</string>
+    <string name="protein">Protein</string>
+    <string name="fat">Fat</string>
+    <string name="carbs">Carbs</string>
+    <string name="grams_short">g</string>
+
+    <string name="carb_label_includes_fibre">carb incl. fibre</string>
+    <string name="carb_label_monosaccharide">carb, sugar equiv.</string>
+    <string name="millilitres_short">ml</string>
+    <string name="ounces_short">oz</string>
+
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="snacks">Snacks</string>
+
+    <string name="of_kcal">of %1$d %2$s</string>
+    <string name="kcal_remaining">%1$d remaining</string>
+    <string name="no_items_logged">No items logged</string>
+    <string name="nothing_logged_this_day">Nothing logged for this day yet.</string>
+    <string name="today_label">Today</string>
+    <string name="previous_day_cd">Previous day</string>
+    <string name="next_day_cd">Next day</string>
+    <string name="jump_to_date_cd">Jump to a date</string>
+    <string name="jump_to_today_cd">Jump to today</string>
+
+    <string name="logging_for_date">Logging for %1$s</string>
+
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="log_food">Log Food</string>
+    <string name="loading">Loading\u2026</string>
+
+    <string name="back_cd">Back</string>
+    <string name="delete_cd">Delete</string>
+    <string name="clear_cd">Clear</string>
+
+    <string name="search_hint">Search foods\u2026</string>
+    <string name="no_results">No results found</string>
+
+    <string name="no_results_in_database">Nothing in %1$s matching that.</string>
+    <string name="no_results_in_database_language">%1$s is written in %2$s. Try that word in %2$s.</string>
+    <string name="no_results_widen">Search all databases</string>
+
+    <string name="results_borrowed">Nothing in %1$s. Showing other databases in your language.</string>
+
+    <string name="add_query_manually">Add “%1$s” manually</string>
+
+    <string name="point_camera_at_barcode">Point camera at a barcode</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="looking_up_barcode">Looking up %1$s\u2026</string>
+    <string name="add_manually">Add Manually</string>
+    <string name="scan_again">Scan Again</string>
+    <string name="camera_permission_required">Camera permission is required to scan barcodes</string>
+    <string name="barcode_not_found">Barcode not found in database</string>
+
+    <string name="off_lookup_title">Look up in Open Food Facts?</string>
+    <string name="off_lookup_offer">Look this up in Open Food Facts</string>
+    <string name="off_lookup_explainer">Open Food Facts is a free, open database of food products. If you turn this on, the app can ask it about a barcode this phone does not recognise.
+
+Only the barcode number is sent to Open Food Facts, and only when you tap the button. That request includes no account, advertising identifier or diary data. The barcode scanner’s separate Google diagnostic traffic is not controlled by this setting.
+
+You can turn this off again in Settings.</string>
+    <string name="off_lookup_enable">Turn on</string>
+    <string name="look_up_online">Look up in Open Food Facts</string>
+    <string name="off_lookup_nothing_found">Open Food Facts does not have usable details for this barcode either.</string>
+    <string name="off_lookup_unavailable">Could not reach Open Food Facts. Check your connection, or add the food manually.</string>
+    <string name="off_lookup_running">Contacting Open Food Facts…</string>
+    <string name="settings_off_lookup">Look up unknown barcodes online</string>
+    <string name="settings_off_lookup_summary">Ask Open Food Facts about a barcode this phone does not recognise. Sends only the barcode, only when you tap the button on a failed scan. Off by default.</string>
+
+    <string name="add_product">Add product</string>
+    <string name="barcode_label">Barcode: %1$s</string>
+    <string name="brand_label">Brand (optional)</string>
+    <string name="per_100g_header">Per 100 g</string>
+    <string name="save_product">Save product</string>
+    <string name="contribute_to_off">Also send to Open Food Facts</string>
+    <string name="contribute_to_off_detail">Publishes this product to Open Food Facts so other people can find it. Sends the barcode, name, brand and values above through Lethio, plus a random app identifier used to moderate contributions. It does not send your diary.</string>
+    <string name="contribute_not_sent_title">Not added to Open Food Facts</string>
+    <string name="contribute_unconfirmed_title">Contribution not confirmed</string>
+    <string name="contribute_sent_title">Sent to Open Food Facts</string>
+    <string name="contribute_accepted">Thanks — this product is now in the open database for everyone.</string>
+    <string name="continue_to_log">Continue</string>
+    <string name="contribute_refused">This product was not accepted for contribution. It is saved on your phone and you can keep using it as normal.</string>
+    <string name="contribute_unavailable">Could not confirm whether Open Food Facts received this product. It is saved on your phone. Check Open Food Facts before trying again.</string>
+    <string name="settings_off_contribute">Contribute new products</string>
+    <string name="settings_off_contribute_summary">Allow the app to offer sharing a product with Open Food Facts when it has no usable entry for that barcode. You choose each product using a box that starts unticked. Off by default and separate from online lookup.</string>
+    <string name="ok">OK</string>
+
+    <string name="amount_grams">Amount (g)</string>
+    <string name="meal">Meal</string>
+    <string name="nutrition_for_grams">Nutrition for %1$dg</string>
+
+    <string name="food_name_label">Food name</string>
+    <string name="protein_g">Protein (g)</string>
+    <string name="fat_g">Fat (g)</string>
+    <string name="carbs_g">Carbs (g)</string>
+    <string name="calories_kcal">Calories (kcal)</string>
+
+    <string name="no_history">No history yet. Start logging!</string>
+
+    <string name="daily_goals">Daily Goals</string>
+    <string name="save_goals">Save Goals</string>
+    <string name="goals_saved">Goals saved!</string>
+
+    <string name="help_me_pick">Help me pick a target</string>
+    <string name="goal_wizard_title">Estimate a target</string>
+    <string name="goal_wizard_intro">Answer what you can. You can edit the numbers before saving.</string>
+    <string name="weight_kg">Weight (kg)</string>
+    <string name="weight_lb">Weight (lb)</string>
+    <string name="height_cm">Height (cm)</string>
+
+    <string name="weight_stone">st</string>
+    <string name="weight_pounds">lb</string>
+    <string name="height_feet">ft</string>
+    <string name="height_inches">in</string>
+    <string name="age_years">Age (years)</string>
+    <string name="sex_label">Sex</string>
+    <string name="sex_female">Female</string>
+    <string name="sex_male">Male</string>
+    <string name="sex_unspecified">Unspecified</string>
+
+    <string name="sex_explainer">Used only to estimate resting metabolism. Unspecified averages the two values the equation provides.</string>
+
+    <string name="sex_unused">Not used while a body fat percentage is set. Clear it to use this instead.</string>
+    <string name="body_fat_percent">Body fat percentage</string>
+    <string name="body_fat_optional">Optional. If you know it, it replaces the question above and gives a better estimate.</string>
+    <string name="activity_level">Activity</string>
+    <string name="activity_sedentary">Sedentary</string>
+    <string name="activity_light">Lightly active</string>
+    <string name="activity_moderate">Moderately active</string>
+    <string name="activity_active">Active</string>
+    <string name="activity_very_active">Very active</string>
+    <string name="goal_direction">Goal</string>
+    <string name="goal_lose">Lose weight</string>
+    <string name="goal_maintain">Maintain</string>
+    <string name="goal_gain">Gain weight</string>
+    <string name="rate_kg_per_week">Rate (kg per week)</string>
+
+    <string name="rate_lb_per_week">Rate (lb per week)</string>
+    <string name="goal_wizard_result">About %1$d kcal a day</string>
+
+    <string name="goal_wizard_estimate_mifflin">Estimated with the Mifflin-St Jeor equation. Check it against the scale over a few weeks.</string>
+    <string name="goal_wizard_estimate_katch">Estimated with the Katch-McArdle equation, which uses lean mass in place of sex. Check it against the scale over a few weeks.</string>
+    <string name="use_these_targets">Use these targets</string>
+
+    <string name="export_csv">Export to CSV</string>
+    <string name="export_csv_subtitle">Save all log data as a CSV file</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="data_sources">Data sources</string>
+    <string name="data_sources_subtitle">Where the nutrition data comes from, and its licences</string>
+    <string name="data_sources_intro">Nutrition data in this app comes from national food composition tables and Open Food Facts. Each is credited below under the terms it is published on.</string>
+    <string name="about">About</string>
+    <string name="about_subtitle">%1$s v%2$s: Offline by default, no accounts, no tracking</string>
+    <string name="serving_size">Serving size</string>
+    <string name="amount">Amount</string>
+    <string name="daily_target">Daily Target</string>
+    <string name="food_logged">Food logged</string>
+    <string name="goal_saved">Goal saved</string>
+
+    <string name="language">Language</string>
+    <string name="language_system">System default</string>
+    <string name="language_en">English</string>
+    <string name="language_nb">Norsk Bokmål</string>
+    <string name="language_pt">Português</string>
+    <string name="language_fr">Français</string>
+    <string name="language_de">Deutsch</string>
+    <string name="language_es">Español</string>
+    <string name="language_sv">Svenska</string>
+    <string name="language_it">Italiano</string>
+
+    <string name="generic_food_database">Generic food database</string>
+    <string name="country_system">System default</string>
+
+    <string name="country_system_resolved">Currently resolves to %1$s.</string>
+    <string name="generic_database_explainer">Used for ordinary foods. Branded products from Open Food Facts remain available. Set automatically at first launch, unless your phone\'s language and provider disagree. In that case, you\'re asked once.</string>
+
+    <string name="database_language">Food names are shown in %1$s.</string>
+
+    <string name="choose_database_title">Which food database?</string>
+    <string name="choose_database_body">Your food database could be either %1$s or %2$s. Pick whichever matches where you actually shop. You can change this any time in Settings.</string>
+    <string name="choose_database_confirm">Use this database</string>
+    <string name="choose_database_skip">Decide later</string>
+    <string name="country_us">United States</string>
+    <string name="country_fr">France</string>
+    <string name="country_de">Germany</string>
+    <string name="country_es">Spain</string>
+    <string name="country_uk">United Kingdom</string>
+    <string name="country_au">Australia</string>
+    <string name="country_ca">Canada</string>
+    <string name="country_ch">Switzerland</string>
+    <string name="country_dk">Denmark</string>
+    <string name="country_fi">Finland</string>
+    <string name="country_no">Norway</string>
+    <string name="country_pt">Portugal</string>
+    <string name="country_se">Sweden</string>
+
+    <string name="undo">Undo</string>
+    <string name="entry_deleted">Entry deleted</string>
+    <string name="per_100g">per 100g</string>
+    <string name="add_favorite_cd">Add to favourites</string>
+    <string name="remove_favorite_cd">Remove from favourites</string>
+    <string name="search_to_get_started">Search for a food to get started. Foods you log will appear here.</string>
+
+    <string name="nutrition_for">Nutrition for %1$s (%2$d g)</string>
+    <string name="export_nothing">Nothing to export yet</string>
+    <string name="export_failed">Export failed</string>
+
+    <string name="food_unavailable">This food is no longer available</string>
+    <string name="food_unavailable_detail">It was removed when the food database was updated, or deleted from your own foods. Meals you already logged are unaffected. They keep their own copy of the nutrition numbers.</string>
+    <string name="go_back">Go back</string>
+
+    <string name="calorie_summary_cd">%1$d of %2$d kilocalories, %3$d remaining</string>
+    <string name="macro_progress_cd">%1$d of %2$d grams</string>
+    <string name="macro_breakdown_cd">%1$d grams protein, %2$d grams fat, %3$d grams carbohydrate</string>
+
+    <string name="portion_serving">serving</string>
+    <string name="portion_cup">cup</string>
+    <string name="portion_tablespoon">tablespoon</string>
+    <string name="portion_teaspoon">teaspoon</string>
+    <string name="portion_slice">slice</string>
+    <string name="portion_piece">piece</string>
+    <string name="portion_unit">unit</string>
+    <string name="portion_bar">bar</string>
+    <string name="portion_bottle">bottle</string>
+    <string name="portion_can">can</string>
+    <string name="portion_package">package</string>
+    <string name="portion_small">small</string>
+    <string name="portion_medium">medium</string>
+    <string name="portion_large">large</string>
+    <string name="portion_steak">steak</string>
+    <string name="portion_roast">roast</string>
+    <string name="portion_fillet">fillet</string>
+    <string name="portion_jar">jar</string>
+    <string name="portion_extra_small">extra small</string>
+    <string name="portion_extra_large">extra large</string>
+
+    <string name="mass_unit_title">Weight and height</string>
+    <string name="mass_unit_metric">Kilograms and centimetres</string>
+    <string name="mass_unit_imperial_us">Pounds, feet and inches (US)</string>
+    <string name="mass_unit_imperial_uk">Stone, feet and inches (UK)</string>
+    <string name="energy_unit_title">Energy unit</string>
+    <string name="energy_unit_kcal">Kilocalories (kcal)</string>
+    <string name="energy_unit_kj">Kilojoules (kJ)</string>
+    <string name="energy_kcal">kcal</string>
+    <string name="energy_kj">kJ</string>
+
+    <string name="value_must_be_zero_or_more">Enter a number of zero or more.</string>
+    <string name="amount_unit_not_convertible">This food has no known weight for that unit. Choose another unit.</string>
+    <string name="value_looks_unusually_large">That is a very large amount. Worth a second look.</string>
+    <string name="energy_does_not_match_macros">These macros work out to about %1$d kcal.</string>
+
+    <string name="calories_below_safe_minimum">Targets under %1$d kcal a day need medical supervision, so this app will not set one.</string>
+    <string name="calories_below_floor">Under %1$d kcal a day it is hard to get enough vitamins and minerals from food.</string>
+    <string name="searching_announcement">Searching</string>
+    <plurals name="search_results_count">
+        <item quantity="one">%1$d result</item>
+        <item quantity="other">%1$d results</item>
+    </plurals>
+</resources>
