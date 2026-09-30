@@ -70,6 +70,38 @@ android {
     }
 }
 
+val softwareNoticesFile = layout.projectDirectory.file("src/main/assets/software-licenses.json").asFile
+
+tasks.register("exportLicenseInventory") {
+    group = "verification"
+    doLast {
+        val artifacts = configurations.getByName("releaseRuntimeClasspath")
+            .resolvedConfiguration.resolvedArtifacts.map {
+                mapOf(
+                    "group" to it.moduleVersion.id.group,
+                    "name" to it.moduleVersion.id.name,
+                    "version" to it.moduleVersion.id.version,
+                    "file" to it.file.absolutePath,
+                )
+            }
+        val output = layout.buildDirectory.file("license-inventory.json").get().asFile
+        output.parentFile.mkdirs()
+        output.writeText(groovy.json.JsonOutput.toJson(artifacts))
+    }
+}
+
+val checkSoftwareNotices = tasks.register("checkSoftwareNotices") {
+    doLast {
+        check(softwareNoticesFile.isFile) { "Missing software-licenses.json; regenerate software notices" }
+        val data = groovy.json.JsonSlurper().parse(softwareNoticesFile) as Map<*, *>
+        val recorded = (data["artifacts"] as List<*>).map { it.toString() }.toSet()
+        val resolved = configurations.getByName("releaseRuntimeClasspath")
+            .resolvedConfiguration.resolvedArtifacts.map { it.moduleVersion.id.toString() }.toSet()
+        check(recorded == resolved) { "Runtime dependencies changed; regenerate software notices" }
+    }
+}
+tasks.named("preBuild") { dependsOn(checkSoftwareNotices) }
+
 val checkFoodAssets = tasks.register("checkFoodAssets") {
     doLast {
         for (asset in listOf("seed.db", "compound-lexicon.txt")) {

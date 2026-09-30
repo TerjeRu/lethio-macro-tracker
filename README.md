@@ -4,8 +4,15 @@ A calorie diary for Android built on national food composition tables. Search yo
 country's table first, see where each result comes from, and keep your diary on your
 phone.
 
+[Open Food Facts](https://world.openfoodfacts.org/) was the main inspiration for
+Macro Tracker. Its contributors make food-label information available to everyone.
+The app includes over half a million products from their database, and you can
+contribute missing products from the scanner.
+
 [About the app](https://macros.lethio.com/) ·
-[Privacy policy](https://macros.lethio.com/#privacy)
+[Google Play](https://play.google.com/store/apps/details?id=com.lethio.macros) ·
+[Privacy policy](https://macros.lethio.com/#privacy) ·
+[Open Food Facts data](https://github.com/TerjeRu/lethio-food-db)
 
 The app supports daily calorie and macro targets, weight tracking, barcode scanning,
 custom foods, portion sizes, and CSV export. The interface is available in English,
@@ -72,6 +79,10 @@ branding, and Open Food Facts contact identity.
 
 ## Additional food sources
 
+The [food-data repository](https://github.com/TerjeRu/lethio-food-db) publishes the
+Play release's Open Food Facts records as SQLite and CSV downloads under ODbL 1.0.
+The database builder uses the upstream formats listed below.
+
 `python tools/build_nutrition_db.py --help` lists all source options. Download your
 chosen datasets and pass their local paths to the builder:
 
@@ -115,10 +126,8 @@ build.
 
 ## Network features
 
-Barcode scanning uses Google ML Kit. When you use the scanner, that SDK sends Google
-limited app and device information, a per-installation identifier, performance
-measurements and scanner events for diagnostics and usage analytics.
-See [Google's disclosure](https://developers.google.com/ml-kit/android-data-disclosure).
+Barcode scanning uses Google ML Kit. Its data use is covered in the
+[privacy policy](https://macros.lethio.com/#privacy).
 
 The diary and local food search work offline. Open Food Facts lookup and product
 contribution have independent settings and are off by default. A lookup sends one
@@ -154,3 +163,13 @@ Third-party software and nutrition datasets retain their own licenses.
 
 See [nutrition data licenses](LICENSES/Nutrition-data.txt) for nutrition data and
 [third-party notices](NOTICE) for software notices.
+
+After changing runtime dependencies, regenerate the bundled software notices:
+
+```sh
+./gradlew :app:exportLicenseInventory
+python tools/build_software_notices.py --inventory app/build/license-inventory.json --mpl LICENSES/MPL-2.0.txt --out app/src/main/assets/software-licenses.json
+```
+
+On Windows, use `gradlew.bat`. The build checks that the notice inventory matches
+the resolved runtime dependencies.

@@ -168,6 +168,7 @@ You can turn this off again in Settings.</string>
     <string name="dark_mode">Dark Mode</string>
     <string name="data_sources">Data sources</string>
     <string name="data_sources_subtitle">Where the nutrition data comes from, and its licences</string>
+    <string name="software_licenses">Software licenses</string>
     <string name="data_sources_intro">Nutrition data in this app comes from national food composition tables and Open Food Facts. Each is credited below under the terms it is published on.</string>
     <string name="about">About</string>
     <string name="about_subtitle">%1$s v%2$s: Offline by default, no accounts, no tracking</string>

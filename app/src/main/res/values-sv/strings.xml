@@ -252,4 +252,5 @@
         <item quantity="one">%1$d träff</item>
         <item quantity="other">%1$d träffar</item>
     </plurals>
+    <string name="software_licenses">Programvarulicenser</string>
 </resources>

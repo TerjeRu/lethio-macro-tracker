@@ -17,6 +17,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -29,7 +30,7 @@ import com.lethio.macros.domain.model.DataSourceAttribution
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun AttributionScreen(onNavigateBack: () -> Unit) {
+fun AttributionScreen(onNavigateBack: () -> Unit, onSoftwareLicenses: () -> Unit) {
     val context = LocalContext.current
 
     Scaffold(
@@ -59,6 +60,9 @@ fun AttributionScreen(onNavigateBack: () -> Unit) {
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.padding(horizontal = 16.dp, vertical = 16.dp),
             )
+            TextButton(onClick = onSoftwareLicenses) {
+                Text(stringResource(R.string.software_licenses))
+            }
             HorizontalDivider()
 
             DataSourceAttribution.ALL.forEach { attribution ->
@@ -91,6 +95,13 @@ fun AttributionScreen(onNavigateBack: () -> Unit) {
                             style = MaterialTheme.typography.bodySmall,
                             modifier = Modifier.padding(top = 6.dp),
                         )
+                    }
+                    listOfNotNull(attribution.licenceUrl, attribution.downloadUrl).forEach { url ->
+                        TextButton(onClick = {
+                            context.startActivity(Intent(Intent.ACTION_VIEW, url.toUri()))
+                        }) {
+                            Text(url)
+                        }
                     }
                 }
                 HorizontalDivider()

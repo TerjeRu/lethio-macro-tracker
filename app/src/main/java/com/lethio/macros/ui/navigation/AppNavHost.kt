@@ -15,6 +15,7 @@ import com.lethio.macros.ui.product.AddProductScreen
 import com.lethio.macros.ui.scanner.ScannerScreen
 import com.lethio.macros.ui.search.SearchScreen
 import com.lethio.macros.ui.settings.AttributionScreen
+import com.lethio.macros.ui.settings.SoftwareLicensesScreen
 import com.lethio.macros.ui.settings.SettingsScreen
 
 @Composable
@@ -45,7 +46,14 @@ fun AppNavHost(
         }
 
         composable(Screen.Attribution.route) {
-            AttributionScreen(onNavigateBack = { navController.popBackStack() })
+            AttributionScreen(
+                onNavigateBack = { navController.popBackStack() },
+                onSoftwareLicenses = { navController.navigate(Screen.SoftwareLicenses.route) },
+            )
+        }
+
+        composable(Screen.SoftwareLicenses.route) {
+            SoftwareLicensesScreen(onNavigateBack = { navController.popBackStack() })
         }
 
         composable(Screen.Search.route) {

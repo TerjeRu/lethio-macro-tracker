@@ -9,4 +9,11 @@ Dagger / Hilt, KSP, OkHttp, Okio: Apache-2.0.
 SQLite engine: public domain (https://www.sqlite.org/copyright.html).
 Google ML Kit: https://developers.google.com/ml-kit/terms.
 
+CameraX includes libyuv (BSD notices). OkHttp includes Mozilla-licensed
+Public Suffix List data. See LICENSES/MPL-2.0.txt.
+
+Resolved runtime licenses, copyright statements and bundled third-party
+notices are preserved in app/src/main/assets/software-licenses.json and
+displayed in the app's Software licenses screen.
+
 Nutrition data terms and attribution: LICENSES/Nutrition-data.txt.
