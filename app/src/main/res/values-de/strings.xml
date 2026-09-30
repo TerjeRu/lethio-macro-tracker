@@ -252,4 +252,5 @@
         <item quantity="one">%1$d Ergebnis</item>
         <item quantity="other">%1$d Ergebnisse</item>
     </plurals>
+    <string name="software_licenses">Softwarelizenzen</string>
 </resources>

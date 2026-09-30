@@ -252,4 +252,5 @@
         <item quantity="one">%1$d treff</item>
         <item quantity="other">%1$d treff</item>
     </plurals>
+    <string name="software_licenses">Programvarelisenser</string>
 </resources>

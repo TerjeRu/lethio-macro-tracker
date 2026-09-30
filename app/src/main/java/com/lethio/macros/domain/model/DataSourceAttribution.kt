@@ -7,6 +7,8 @@ data class DataSourceAttribution(
     val licence: String,
     val required: String? = null,
     val url: String? = null,
+    val licenceUrl: String? = null,
+    val downloadUrl: String? = null,
 ) {
     companion object {
 
@@ -19,6 +21,8 @@ data class DataSourceAttribution(
                 required = "Contains information from Open Food Facts, which is made available " +
                     "under the Open Database License (ODbL).",
                 url = "https://world.openfoodfacts.org/data",
+                licenceUrl = "https://opendatacommons.org/licenses/odbl/1-0/",
+                downloadUrl = "https://github.com/TerjeRu/lethio-food-db/releases",
             ),
             DataSourceAttribution(
                 source = DataSource.USDA,
@@ -33,6 +37,7 @@ data class DataSourceAttribution(
                 title = "Bundeslebensmittelschlüssel (BLS) 4.0",
                 licence = "CC BY 4.0 — Max Rubner-Institut",
                 url = "https://www.blsdb.de/",
+                licenceUrl = "https://creativecommons.org/licenses/by/4.0/",
             ),
             DataSourceAttribution(
                 source = DataSource.COFID,
@@ -44,6 +49,7 @@ data class DataSourceAttribution(
                     "Government Licence v3.0.",
                 url = "https://www.gov.uk/government/publications/" +
                     "composition-of-foods-integrated-dataset-cofid",
+                licenceUrl = "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
             ),
             DataSourceAttribution(
                 source = DataSource.CIQUAL,
@@ -51,6 +57,7 @@ data class DataSourceAttribution(
                 title = "ANSES-Ciqual French food composition table",
                 licence = "Etalab 2.0 / CC BY 4.0",
                 url = "https://ciqual.anses.fr/",
+                licenceUrl = "https://www.etalab.gouv.fr/licence-ouverte-open-licence/",
             ),
             DataSourceAttribution(
                 source = DataSource.AFCD,
@@ -66,8 +73,11 @@ data class DataSourceAttribution(
                     "because of a number of factors, including changes in season, processing " +
                     "practices and ingredient source, and methods of calculation.\n\n" +
                     "the Work is based on Australian data and Australia data may not be " +
-                    "appropriate for use in other countries",
+                    "appropriate for use in other countries\n\n" +
+                    "Names and units have been normalized, aliases and search indexes added, " +
+                    "and records with invalid nutrition values omitted.",
                 url = "https://www.foodstandards.gov.au/science-data/monitoringnutrients/afcd",
+                licenceUrl = "https://www.foodstandards.gov.au/science-data/monitoringnutrients/afcd/datauserlicenceagreement",
             ),
             DataSourceAttribution(
                 source = DataSource.CNF,
@@ -79,6 +89,7 @@ data class DataSourceAttribution(
                     "Licence – Canada.",
                 url = "https://open.canada.ca/data/en/dataset/" +
                     "1b6139bd-ed7e-4043-bc28-ff00e10f3109",
+                licenceUrl = "https://open.canada.ca/en/open-government-licence-canada",
             ),
             DataSourceAttribution(
                 source = DataSource.FINELI,
@@ -89,6 +100,7 @@ data class DataSourceAttribution(
                 required = "Copyright 2015 National Institute for Health and Welfare (THL). " +
                     "Licence: Creative Commons Attribution 4.0 (CC-BY 4.0).",
                 url = "https://fineli.fi/fineli/en/ohje/19",
+                licenceUrl = "https://creativecommons.org/licenses/by/4.0/",
             ),
             DataSourceAttribution(
                 source = DataSource.FRIDA,
@@ -108,6 +120,7 @@ data class DataSourceAttribution(
 
                 required = "The Swedish Food Agency must be stated as the source.",
                 url = "https://www.livsmedelsverket.se/en/about-us/psidata/food-composition-data",
+                licenceUrl = "https://creativecommons.org/licenses/by/4.0/",
             ),
             DataSourceAttribution(
                 source = DataSource.MATVARETABELLEN,
@@ -118,6 +131,7 @@ data class DataSourceAttribution(
                 required = "Contains data under the Norwegian licence for Open Government " +
                     "data (NLOD) distributed by Mattilsynet.",
                 url = "https://www.matvaretabellen.no/en/",
+                licenceUrl = "https://data.norge.no/nlod/en/2.0",
             ),
             DataSourceAttribution(
                 source = DataSource.SWISS,

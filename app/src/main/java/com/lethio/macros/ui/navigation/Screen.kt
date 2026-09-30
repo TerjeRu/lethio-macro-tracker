@@ -15,6 +15,7 @@ sealed class Screen(val route: String) {
     data object Goals : Screen("goals")
     data object Settings : Screen("settings")
     data object Attribution : Screen("attribution")
+    data object SoftwareLicenses : Screen("software_licenses")
     data object Search : Screen("search")
     data object Scanner : Screen("scanner")
     data object QuickAdd : Screen("quick_add?name={name}") {
