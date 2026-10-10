@@ -1,0 +1,33 @@
+package com.lethio.macros.ui.util
+
+import androidx.compose.runtime.compositionLocalOf
+import com.lethio.macros.R
+import com.lethio.macros.domain.model.MassUnit
+
+/**
+ * The reader's body units, provided at the app root like [LocalEnergyUnit]: display only, storage
+ * is metric. `GoalsViewModel` receives it as an argument to `openWizard`.
+ */
+val LocalMassUnit = compositionLocalOf { MassUnit.METRIC }
+
+/** Settings-picker label for each mode. Names the country, because the units alone do not. */
+val MassUnit.labelRes: Int
+    get() = when (this) {
+        MassUnit.METRIC -> R.string.mass_unit_metric
+        MassUnit.IMPERIAL_US -> R.string.mass_unit_imperial_us
+        MassUnit.IMPERIAL_UK -> R.string.mass_unit_imperial_uk
+    }
+
+/** The label for the single weight field. Unused in [MassUnit.IMPERIAL_UK], which has two. */
+val MassUnit.weightLabelRes: Int
+    get() = when (this) {
+        MassUnit.METRIC -> R.string.weight_kg
+        else -> R.string.weight_lb
+    }
+
+/** The label for the weekly rate field. Pounds under both imperial modes -- see `BodyUnits`. */
+val MassUnit.rateLabelRes: Int
+    get() = when (this) {
+        MassUnit.METRIC -> R.string.rate_kg_per_week
+        else -> R.string.rate_lb_per_week
+    }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The interface languages, for Android 13+'s per-app language setting. Must match the values-*
+  directories exactly, or the system offers languages the app cannot render.
+-->
+<locale-config xmlns:android="http://schemas.android.com/apk/res/android">
+    <locale android:name="en" />
+    <locale android:name="nb" />
+    <locale android:name="de" />
+    <locale android:name="es" />
+    <locale android:name="fr" />
+    <locale android:name="it" />
+    <locale android:name="pt" />
+    <locale android:name="sv" />
+    <locale android:name="nl" />
+    <locale android:name="da" />
+    <locale android:name="fi" />
+</locale-config>
