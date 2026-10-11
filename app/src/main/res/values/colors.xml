@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      The window background painted by the system before Compose draws its first frame.
+      Must track the Compose surface colour (see ui/theme/Color.kt) or cold start flashes.
+      Light value: LightColors.background.
+    -->
+    <color name="window_background">#FBFDF7</color>
+</resources>

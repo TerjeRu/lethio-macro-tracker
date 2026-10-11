@@ -1,0 +1,19 @@
+Original Lethio application and tooling code: MIT (see LICENSE).
+
+Gradle wrapper components: copyright their respective authors, Apache-2.0.
+See LICENSES/Apache-2.0.txt and the notices in the wrapper scripts.
+
+AndroidX, Jetpack Compose, Room, CameraX, Hilt navigation integration: Apache-2.0.
+Kotlin, Kotlin serialization, Kotlin coroutines: Apache-2.0.
+Dagger / Hilt, KSP, OkHttp, Okio: Apache-2.0.
+SQLite engine: public domain (https://www.sqlite.org/copyright.html).
+zxing-cpp (barcode decoding): Apache-2.0, https://github.com/zxing-cpp/zxing-cpp.
+
+CameraX includes libyuv (BSD notices). OkHttp includes Mozilla-licensed
+Public Suffix List data. See LICENSES/MPL-2.0.txt.
+
+Resolved runtime licenses, copyright statements and bundled third-party
+notices are preserved in app/src/main/assets/software-licenses.json and
+displayed in the app's Software licenses screen.
+
+Nutrition data terms and attribution: LICENSES/Nutrition-data.txt.

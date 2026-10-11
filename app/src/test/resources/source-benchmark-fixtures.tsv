@@ -1,0 +1,40 @@
+# query	country	language
+# Fixed timing scenarios run through the real repository; no ranking expectations.
+butter salted	US	en
+bread wholemeal	UK	en
+olive oil extra virgin	FR	en
+leche	ES	es
+lait	FR	fr
+milch	DE	de
+mjolk	SE	sv
+maito	FI	fi
+melk	NO	nb
+maelk	DK	da
+leite	PT	pt
+oats	CH	de
+oats	CA	en
+oats	AU	en
+apple	US	en
+apple	SE	sv
+svinekjott	NO	nb
+svinekod	DK	da
+kyllingfilet	NO	nb
+milk	US	en
+bread	US	en
+chicken	US	en
+milk	UK	en
+bread	UK	en
+chicken	UK	en
+apple	UK	en
+milk	CA	en
+bread	CA	en
+chicken	CA	en
+apple	CA	en
+milk	AU	en
+bread	AU	en
+chicken	AU	en
+apple	AU	en
+aardappelen	NL	nl
+brood	NL	nl
+apple	NZ	en
+Māori bread	NZ	en

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "text_cases": [
+    {"id":"multilingual_name","field":"product_name","value":"Käse Smørbrød Açúcar 日本語","accepted":true},
+    {"id":"supplementary_symbol","field":"product_name","value":"Tea 🫖","accepted":true},
+    {"id":"post_unicode_14_symbol","field":"product_name","value":"Tea 🩵","accepted":true},
+    {"id":"trimmed_minimum","field":"product_name","value":"  AB  ","accepted":true},
+    {"id":"one_character_name","field":"product_name","value":"x","accepted":false},
+    {"id":"overlong_name","field":"product_name","value":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","accepted":false},
+    {"id":"ordinary_brand","field":"brand","value":"Don Simón","accepted":true},
+    {"id":"soft_hyphen","field":"product_name","value":"safe\u00adlooking","accepted":false},
+    {"id":"zero_width_joiner","field":"product_name","value":"safe\u200dlooking","accepted":false},
+    {"id":"bidi_override","field":"brand","value":"safe\u202elooking","accepted":false},
+    {"id":"line_feed","field":"product_name","value":"safe\nlooking","accepted":false},
+    {"id":"private_use","field":"product_name","value":"safe\ue000looking","accepted":false},
+    {"id":"lone_surrogate","field":"product_name","value":"safe\ud800looking","accepted":false}
+  ],
+  "nutrition_cases": [
+    {"id":"ordinary","energy_kcal_100g":50,"protein_g_100g":3.6,"fat_g_100g":1.8,"carbohydrate_g_100g":4.8,"accepted":true},
+    {"id":"minimum_energy","energy_kcal_100g":1,"protein_g_100g":0,"fat_g_100g":0,"carbohydrate_g_100g":0,"accepted":true},
+    {"id":"maximum_energy","energy_kcal_100g":900,"protein_g_100g":0,"fat_g_100g":100,"carbohydrate_g_100g":0,"accepted":true},
+    {"id":"zero_energy","energy_kcal_100g":0,"protein_g_100g":0,"fat_g_100g":0,"carbohydrate_g_100g":0,"accepted":false},
+    {"id":"excess_energy","energy_kcal_100g":901,"protein_g_100g":0,"fat_g_100g":100,"carbohydrate_g_100g":0,"accepted":false},
+    {"id":"negative_macro","energy_kcal_100g":50,"protein_g_100g":-1,"fat_g_100g":1.8,"carbohydrate_g_100g":4.8,"accepted":false},
+    {"id":"macro_sum","energy_kcal_100g":500,"protein_g_100g":36,"fat_g_100g":35,"carbohydrate_g_100g":35,"accepted":false},
+    {"id":"atwater_mismatch","energy_kcal_100g":500,"protein_g_100g":0,"fat_g_100g":0,"carbohydrate_g_100g":25,"accepted":false}
+  ]
+}

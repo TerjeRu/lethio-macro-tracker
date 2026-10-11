@@ -1,0 +1,152 @@
+# query	country	language	acceptable regex	unacceptable regex
+#
+# THE STAPLE FIXTURE. One question, asked of the top row only: when a reader types the ordinary
+# word for an ordinary food, do they get that food?
+#
+# It exists because the 234-case relevance fixture cannot answer it. That one accepts any bread
+# for `bröd`, so it scored 212/234 (90.6%) top-1 on build 10 while hand-judging the same build
+# scored 7/25 (28%). Both numbers were correct; only one was measuring what a reader experiences.
+# Every constant in the search ladder and in the query-side morphology was tuned by watching the
+# lenient number move, which is the real indictment -- not that the rules exist, but that the
+# instrument could not see the defect they were meant to fix.
+#
+# Read it with `--top-k 1`. Anything else misses the point: a staple at position 4 is a miss.
+#
+# THE `-` MARKER. An acceptable cell of `-` means **this table has no generic row for this food**,
+# hand-checked. `bls` and `swiss` contain no row beginning with `Brot` -- German names bread by
+# grain. `tca` has nothing plainer than *Arroz doce* (rice pudding) for rice. Those are DATA gaps
+# and no ORDER BY can fix them, so they are counted separately from ranking failures. Conflating
+# the two means chasing rows that do not exist.
+#
+# Judged against build 10 (schema v5) on 2026-08-29, from the shipped seed, single-source path.
+# Where a table offers several defensible answers the pattern accepts all of them; the point is to
+# catch a derivative or an organ at #1, not to legislate between whole and semi-skimmed.
+
+# --- United States / USDA ---
+oats	US	en	^Oats	Cereals|QUAKER
+lentils	US	en	^Lentils, raw	sprouted|salt
+cucumber	US	en	^Cucumber, with peel, raw|^Cucumber, peeled, raw	Pickles|Sea cucumber
+milk	US	en	^Milk, whole, 3\.25	buttermilk|dry|chocolate
+bread	US	en	^Bread, white, commercially prepared|^Bread, whole-wheat, commercially prepared	sticks|crumbs|pita
+chicken	US	en	^Chicken,.*breast|^Chicken,.*meat	giblets|liver|heart|capons|stewing
+rice	US	en	^Rice, white,.*raw	
+apple	US	en	^Apples, raw	gala|fuji|honeycrisp|granny|delicious
+
+# --- United Kingdom / CoFID ---
+oats	UK	en	^Porridge oats, unfortified$	Biscuits
+lentils	UK	en	^Lentils, red|^Lentils, green and brown	Aubergine
+cucumber	UK	en	^Cucumber, raw	Relish
+milk	UK	en	^Milk, whole, pasteurised, average	sheeps|evaporated|condensed|Channel
+bread	UK	en	^Bread, wholemeal, average|^Bread, white	toasted|ciabatta|wheatgerm
+chicken	UK	en	^Chicken, meat, average, raw|^Chicken, light meat, raw|^Chicken, dark meat, raw	skin|corn-fed
+rice	UK	en	^Rice, white,|^Rice, brown,	Thai fragrant|pudding|pilau
+apple	UK	en	^Apples, eating, raw, flesh and skin$	cooking|weighed
+
+# --- Canada / CNF ---
+oats	CA	en	^Grains, oats, dry$	Cereal|Selection|Quaker|Cream Hill
+lentils	CA	en	^Lentils, mature seeds, dry$|^Lentils, mature seeds, boiled$	pink|sprouted|salt added
+cucumber	CA	en	-	
+milk	CA	en	^Milk, fluid, whole, producer	sheep|goat|chocolate|buttermilk|evaporated
+bread	CA	en	^Bread, whole wheat, commercial$	pita|paratha|focaccia|toasted
+chicken	CA	en	^Chicken,.*breast	giblets|liver|heart|gizzard|capon
+rice	CA	en	^Rice, white	Spanish|cheese flavour|Cracker
+apple	CA	en	^Apple, raw, with(out)? skin$	Gala|Fuji|Granny|Delicious
+
+# --- Australia / AFCD ---
+oats	AU	en	^Oats, hulled, uncooked$|^Oats, rolled, uncooked$	Porridge|sugar or honey
+lentils	AU	en	^Lentil, hulled|^Lentil, dried	red|green|French
+cucumber	AU	en	^Cucumber, common	Lebanese|telegraph
+milk	AU	en	^Milk, cow, fluid	human/breast|evaporated|condensed
+bread	AU	en	^Bread, white$|^Bread, mixed grain$|^Bread, organic$	pita|Lebanese|brioche|banana|gluten free
+chicken	AU	en	^Chicken, breast, lean flesh, raw$	liver|mince|skin|wing|thigh
+rice	AU	en	^Rice, white, uncooked$	wild|brown|instant
+apple	AU	en	-	
+
+# --- France / Ciqual ---
+avoine	FR	fr	^Avoine, crue$	Dessert
+lentilles	FR	fr	^Lentille	Soupe|saucisse|Salade|Galette
+concombre	FR	fr	^Concombre, chair	Salade
+lait	FR	fr	^Lait,|^Lait entier	brebis|jument
+pain	FR	fr	^Pain de mie|^Pain complet|^Pain courant	burger|grillé
+poulet	FR	fr	^Poulet, viande|^Poulet, filet	pilon|cuisse|peau
+riz	FR	fr	^Riz, mélange|^Riz blanc, cru	^Riz rouge|^Riz sauvage
+pomme	FR	fr	^Pomme, chair et peau, crue$	sèche|bouillie|rôtie
+
+# --- Germany / BLS ---
+hafer	DE	de	^Hafer ganzes Korn, roh$	Grieß|Grütze|Flocken
+linsen	DE	de	-	
+gurke	DE	de	^Gurke roh$	gekocht|gebacken|gedünstet|geschmort|gebraten
+milch	DE	de	^Milch fettarm|^Milch entrahmt|^Milch Vollmilch	Buttermilch|pulver|schokolade
+brot	DE	de	-	
+hahnchen	DE	de	^Hähnchen Brustfilet, roh$	Herz|Leber|Magen|Innereien|mariniert
+reis	DE	de	^Reis parboiled|^Reis poliert|^Reis unpoliert	Grieß|Trauttmansdorff
+apfel	DE	de	^Apfel roh$|^Apfel geschält, roh$	gedünstet|getrocknet|Konserve
+
+# --- Spain / BEDCA ---
+avena	ES	es	-	
+lentejas	ES	es	^Lenteja, seca, cruda$|^Lenteja, hervida$	conserva
+pepino	ES	es	^Pepino$	
+leche	ES	es	^Leche, entera|^Leche, semidesnatada|^Leche, desnatada	condensada|fermentada|materna|merengada
+pan	ES	es	^Pan integral$|^Pan blanco	hamburguesa|rallado|tostado|maíz|avena
+pollo	ES	es	^Pollo, pechuga	ala|frito|fiambre
+arroz	ES	es	^Arroz,|^Arroz$	con leche|hinchado|integral
+manzana	ES	es	-	
+
+# --- Norway / Matvaretabellen ---
+havre	NO	nb	-	
+linser	NO	nb	^Linser, røde, tørre$|^Linser, røde, kokt$|^Linser, grønne, tørre$|^Linser, grønne, kokt$	hermetisk|puy
+agurk	NO	nb	^Agurk, norsk, rå$	juice|salat|syltede
+melk	NO	nb	^Melk, uspesifisert$|^Helmelk, uspesifisert$	Syrnet|Vaniljekrem|sjokolade|Bolle
+brod	NO	nb	^Brød, grovt \(|^Brød, halvgrovt \(	glutenfritt|Fria|Semper
+kylling	NO	nb	^Kylling, hel|^Kylling, filet	lårklubbe|landkylling
+ris	NO	nb	^Ris, jasmin|^Ris, basmati|^Ris, hvit	villris|hurtigris
+eple	NO	nb	^Eple, uspesifisert|^Eple, importert|^Eple, norsk	Rød aroma|Pink lady|Ingrid Marie
+
+# --- Sweden / Livsmedelsverket ---
+havre	SE	sv	-	
+linser	SE	sv	^Linser torkade$	Lasagne|Sojafärssås|konserv|Chips
+gurka	SE	sv	^Gurka$|^Gurka färsk$|^Gurka rå$	inlagd|fermenterad|Saltgurka|Sushi|bredbart
+mjolk	SE	sv	^Mjölk fett	Ugnspannkaka|Brunsås|Potatismos|sås
+brod	SE	sv	^Bröd vitt|^Bröd mörkt|^Bröd grovt	glutenfritt|tortilla
+kyckling	SE	sv	^Kyckling filé|^Kyckling bröstfilé|^Kyckling kött	mage|lever|hjärta|grillad
+ris	SE	sv	^Ris jasmin okokt|^Ris basmati okokt|^Ris råris okokt	kokt m\. salt
+apple	SE	sv	^Äpple	Äppelsoppa|Äppelkompott|Äppelsmulpaj
+
+# --- Denmark / Frida ---
+havre	DK	da	^Havregryn	Kiks|Morgenmadsprodukt|Havredrik
+linser	DK	da	^Linser, tørrede|^Linser, grønne|^Linser, røde	konserves
+agurk	DK	da	^Agurk, rå$	syltet|Sandwich
+maelk	DK	da	^Sødmælk|^Letmælk|^Minimælk	Yoghurt
+brod	DK	da	^Rugbrød	Surbrød|Pølsebrød
+kylling	DK	da	^Kylling, kød, rå$	skind|ben|lår|vinge
+ris	DK	da	^Ris, polerede, rå|^Ris, parboiled, rå	Riskiks|Risengryn
+aeble	DK	da	^Æble, uspec\., råt$	cider|gele|most
+
+# --- Finland / Fineli ---
+kaura	FI	fi	-	
+linssit	FI	fi	^Linssi, punainen|^Linssi, vihreä	Kasviskastike|Sekaleipä
+kurkku	FI	fi	^Kurkku	Salaatti|Sushi|Etikkakurkku
+maito	FI	fi	^Maito, täysmaito|^Maito, kevytmaito|^Maito, rasvaton	kutunmaito|tilamaito|raakamaito
+leipa	FI	fi	^Ruisleipä|^Sekaleipä	
+kana	FI	fi	^Kana,|^Kana$	Pizza|Broilerikeitto
+riisi	FI	fi	^Riisi, keitetty	tumma|pitkäjyväinen
+omena	FI	fi	^Omena, kotimainen|^Omena, ulkomainen|^Omena, keskiarvo	kuivattu
+
+# --- Switzerland / Swiss ---
+hafer	CH	de	-	
+linsen	CH	de	^Linse, ganz|^Linse, geschält	Knäckebrot
+gurke	CH	de	-	
+milch	CH	de	^Milch \(Durchschnitt\)$	Tilsiter|Schafmilch|Ziegenmilch
+brot	CH	de	-	
+poulet	CH	de	^Poulet, Brust|^Poulet, ganz	Schenkel
+reis	CH	de	^Reis poliert, trocken|^Reis parboiled, trocken|^Reis unpoliert, trocken	gekocht
+apfel	CH	de	^Apfel, roh$	gedünstet|getrocknet|wein|mus
+
+# --- Portugal / TCA ---
+aveia	PT	pt	-	
+lentilhas	PT	pt	^Lentilhas, secas, cruas$	demolhadas|vermelhas
+pepino	PT	pt	^Pepino cru$	Picles
+leite	PT	pt	^Leite gordo|^Leite meio gordo|^Leite magro	creme|humano|evaporado|condensado
+pao	PT	pt	^Pão de trigo|^Pão de centeio|^Pão de forma	pita|ralado|ló|milho
+frango	PT	pt	^Frango, peito	pele crua|perna
+arroz	PT	pt	-	

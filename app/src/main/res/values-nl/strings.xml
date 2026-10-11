@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dutch, with informal "je", matching the German "du". -->
+<resources>
+    <string name="diary_edit_entry">Invoer bewerken</string>
+    <string name="diary_edit_positive_amount">Vul een hoeveelheid groter dan nul in.</string>
+    <string name="diary_save_changes">Wijzigingen opslaan</string>
+    <string name="diary_edit_failed">De wijzigingen konden niet worden opgeslagen. Je bewerkingen staan er nog.</string>
+    <string name="diary_edit_amount_unavailable">De hoeveelheid van deze invoer kan niet opnieuw worden berekend. Je kunt de maaltijd wel nog wijzigen.</string>
+    <string name="app_name">Lethio Macro Tracker</string>
+
+    <string name="nav_diary">Dagboek</string>
+    <string name="nav_search">Zoeken</string>
+    <string name="nav_scan">Scannen</string>
+    <string name="nav_goals">Doelen</string>
+    <string name="nav_settings">Instellingen</string>
+
+    <string name="add_food">Voeding toevoegen</string>
+    <string name="scan_barcode">Barcode scannen</string>
+    <string name="search_foods">Voeding zoeken</string>
+    <string name="quick_add">Snel toevoegen</string>
+    <string name="favorites">Favorieten</string>
+    <string name="recent">Recent</string>
+
+    <string name="calories">Calorieën</string>
+    <string name="protein">Eiwit</string>
+    <string name="fat">Vet</string>
+    <string name="carbs">Koolhydraten</string>
+    <string name="grams_short">g</string>
+
+    <string name="carb_label_includes_fibre">koolh. incl. vezels</string>
+    <string name="nutrient_trace">sporen</string>
+    <string name="carb_label_monosaccharide">koolh., suikerequiv.</string>
+    <string name="millilitres_short">ml</string>
+    <string name="ounces_short">oz</string>
+
+    <string name="breakfast">Ontbijt</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Avondeten</string>
+    <string name="snacks">Tussendoortjes</string>
+
+    <string name="of_kcal">van %1$d %2$s</string>
+    <string name="kcal_remaining">%1$d over</string>
+    <string name="kcal_over">%1$d boven doel</string>
+    <string name="macro_left">nog %1$s g</string>
+    <string name="macro_over">%1$s g boven doel</string>
+    <string name="add_to_meal_cd">Voeding toevoegen aan %1$s</string>
+    <string name="add_food_item">Voeding toevoegen</string>
+    <string name="copy_from_yesterday">Kopiëren van gisteren</string>
+    <string name="copy_from_previous_day">Kopiëren van de vorige dag</string>
+    <plurals name="entries_copied">
+        <item quantity="one">%1$d item gekopieerd</item>
+        <item quantity="other">%1$d items gekopieerd</item>
+    </plurals>
+    <string name="search_adding_to_meal">Toevoegen aan %1$s</string>
+    <string name="nothing_logged_this_day">Voor deze dag is nog niets ingevoerd.</string>
+    <string name="today_label">Vandaag</string>
+    <string name="previous_day_cd">Vorige dag</string>
+    <string name="next_day_cd">Volgende dag</string>
+    <string name="jump_to_date_cd">Naar een datum gaan</string>
+    <string name="jump_to_today_cd">Naar vandaag gaan</string>
+    <string name="logging_for_date">Invoer voor %1$s</string>
+
+    <string name="save">Opslaan</string>
+    <string name="cancel">Annuleren</string>
+    <string name="edit">Bewerken</string>
+    <string name="log_food">Voeding invoeren</string>
+    <string name="loading">Laden…</string>
+
+    <string name="back_cd">Terug</string>
+    <string name="delete_cd">Verwijderen</string>
+    <string name="clear_cd">Wissen</string>
+
+    <string name="search_hint">Voeding zoeken…</string>
+    <string name="no_results">Geen resultaten gevonden</string>
+    <string name="no_results_in_database">Niets in %1$s dat hierop lijkt.</string>
+    <string name="no_results_in_database_language">%1$s is in het %2$s. Probeer dat woord in het %2$s.</string>
+    <string name="no_results_widen">Alle databases doorzoeken</string>
+    <string name="results_borrowed">Niets in %1$s. Andere databases in jouw taal worden getoond.</string>
+    <string name="add_query_manually">“%1$s” handmatig toevoegen</string>
+
+    <string name="scan_guide_hint">Houd de barcode horizontaal binnen het kader</string>
+    <string name="grant_permission">Toestemming geven</string>
+    <string name="looking_up_barcode">%1$s opzoeken…</string>
+    <string name="add_manually">Handmatig toevoegen</string>
+    <string name="scan_again">Opnieuw scannen</string>
+    <string name="camera_permission_required">Voor het scannen van barcodes is toegang tot de camera nodig</string>
+    <string name="barcode_not_found">Barcode niet gevonden in de database</string>
+
+    <string name="off_lookup_title">Opzoeken in Open Food Facts?</string>
+    <string name="off_lookup_offer">Dit opzoeken in Open Food Facts</string>
+    <string name="off_lookup_explainer">Open Food Facts is een gratis, open database van voedingsproducten. Als je dit aanzet, kan de app daar een barcode opvragen die deze telefoon niet kent.
+
+Alleen het barcodenummer wordt naar Open Food Facts gestuurd, en alleen als je op de knop tikt. Dat verzoek bevat geen account, advertentie-ID of dagboekgegevens.
+
+Je kunt dit in Instellingen weer uitzetten.</string>
+    <string name="off_lookup_enable">Aanzetten</string>
+    <string name="look_up_online">Opzoeken in Open Food Facts</string>
+    <string name="off_lookup_nothing_found">Ook Open Food Facts heeft geen bruikbare gegevens voor deze barcode.</string>
+    <string name="off_lookup_unavailable">Open Food Facts was niet bereikbaar. Controleer je verbinding of voeg de voeding handmatig toe.</string>
+    <string name="off_lookup_running">Contact maken met Open Food Facts…</string>
+    <string name="settings_off_lookup">Onbekende barcodes online opzoeken</string>
+    <string name="settings_off_lookup_summary">Open Food Facts vragen naar een barcode die deze telefoon niet kent. Stuurt alleen de barcode, en alleen als je na een mislukte scan op de knop tikt. Standaard uit.</string>
+
+    <string name="add_product">Product toevoegen</string>
+    <string name="barcode_label">Barcode: %1$s</string>
+    <string name="brand_label">Merk (optioneel)</string>
+    <string name="per_100g_header">Per 100 g</string>
+    <string name="save_product">Product opslaan</string>
+    <string name="contribute_to_off">Ook naar Open Food Facts sturen</string>
+    <string name="contribute_to_off_detail">Publiceert dit product in Open Food Facts, zodat anderen het kunnen vinden. Stuurt de barcode, naam, merk en waarden hierboven via Lethio, plus een willekeurige app-ID die wordt gebruikt om bijdragen te modereren. Je dagboek wordt niet verstuurd.</string>
+    <string name="contribute_not_sent_title">Niet toegevoegd aan Open Food Facts</string>
+    <string name="contribute_unconfirmed_title">Bijdrage niet bevestigd</string>
+    <string name="contribute_sent_title">Verstuurd naar Open Food Facts</string>
+    <string name="contribute_accepted">Bedankt, dit product staat nu voor iedereen in de open database.</string>
+    <string name="continue_to_log">Doorgaan</string>
+    <string name="contribute_refused">Dit product is niet geaccepteerd als bijdrage. Het is op je telefoon opgeslagen en je kunt het gewoon blijven gebruiken.</string>
+    <string name="contribute_unavailable">Niet te bevestigen of Open Food Facts dit product heeft ontvangen. Het is op je telefoon opgeslagen. Kijk in Open Food Facts voordat je het opnieuw probeert.</string>
+    <string name="settings_off_contribute">Nieuwe producten bijdragen</string>
+    <string name="settings_off_contribute_summary">De app mag aanbieden een product met Open Food Facts te delen als er voor die barcode geen bruikbare invoer is. Je kiest elk product zelf met een vakje dat niet aangevinkt begint. Standaard uit en los van online opzoeken.</string>
+    <string name="ok">OK</string>
+
+    <string name="amount_grams">Hoeveelheid (g)</string>
+    <string name="meal">Maaltijd</string>
+    <string name="nutrition_for_grams">Voedingswaarden voor %1$dg</string>
+
+    <string name="food_name_label">Naam van de voeding</string>
+    <string name="protein_g">Eiwit (g)</string>
+    <string name="fat_g">Vet (g)</string>
+    <string name="carbs_g">Koolhydraten (g)</string>
+    <string name="calories_kcal">Calorieën (kcal)</string>
+
+    <string name="no_history">Nog geen geschiedenis. Begin met invoeren!</string>
+
+    <string name="daily_goals">Dagelijkse doelen</string>
+    <string name="save_goals">Doelen opslaan</string>
+    <string name="goals_saved">Doelen opgeslagen!</string>
+
+    <string name="help_me_pick">Help me een doel te kiezen</string>
+    <string name="goal_wizard_title">Een doel schatten</string>
+    <string name="goal_wizard_intro">Vul in wat je weet. Je kunt de getallen aanpassen voordat je opslaat.</string>
+    <string name="weight_kg">Gewicht (kg)</string>
+    <string name="weight_lb">Gewicht (lb)</string>
+    <string name="height_cm">Lengte (cm)</string>
+    <string name="weight_stone">st</string>
+    <string name="weight_pounds">lb</string>
+    <string name="height_feet">ft</string>
+    <string name="height_inches">in</string>
+    <string name="age_years">Leeftijd (jaren)</string>
+    <string name="sex_label">Geslacht</string>
+    <string name="sex_female">Vrouw</string>
+    <string name="sex_male">Man</string>
+    <string name="sex_unspecified">Niet opgegeven</string>
+    <string name="sex_explainer">Alleen gebruikt om de ruststofwisseling te schatten. Bij \'Niet opgegeven\' wordt het gemiddelde van de twee waarden uit de formule gebruikt.</string>
+    <string name="sex_unused">Niet gebruikt zolang er een vetpercentage is ingevuld. Wis dat om dit weer te gebruiken.</string>
+    <string name="body_fat_percent">Vetpercentage</string>
+    <string name="body_fat_optional">Optioneel. Als je het weet, vervangt het de vraag hierboven en geeft het een betere schatting.</string>
+    <string name="activity_level">Activiteit</string>
+    <string name="activity_sedentary">Zittend</string>
+    <string name="activity_light">Licht actief</string>
+    <string name="activity_moderate">Matig actief</string>
+    <string name="activity_active">Actief</string>
+    <string name="activity_very_active">Zeer actief</string>
+    <string name="goal_direction">Doel</string>
+    <string name="goal_lose">Afvallen</string>
+    <string name="goal_maintain">Op gewicht blijven</string>
+    <string name="goal_gain">Aankomen</string>
+    <string name="rate_kg_per_week">Tempo (kg per week)</string>
+    <string name="rate_lb_per_week">Tempo (lb per week)</string>
+    <string name="goal_wizard_result">Ongeveer %1$d kcal per dag</string>
+    <string name="goal_wizard_estimate_mifflin">Geschat met de formule van Mifflin-St Jeor. Controleer het een paar weken aan de hand van de weegschaal.</string>
+    <string name="goal_wizard_estimate_katch">Geschat met de formule van Katch-McArdle, die vetvrije massa gebruikt in plaats van geslacht. Controleer het een paar weken aan de hand van de weegschaal.</string>
+    <string name="use_these_targets">Deze doelen gebruiken</string>
+
+    <string name="export_csv">Exporteren naar CSV</string>
+    <string name="export_csv_subtitle">Alle invoer opslaan als CSV-bestand</string>
+    <string name="dark_mode">Donkere modus</string>
+    <string name="data_sources">Gegevensbronnen</string>
+    <string name="data_sources_subtitle">Waar de voedingsgegevens vandaan komen, en hun licenties</string>
+    <string name="software_licenses">Softwarelicenties</string>
+    <string name="data_sources_intro">De voedingsgegevens in deze app komen uit nationale voedingsmiddelentabellen en Open Food Facts. Elke bron wordt hieronder vermeld volgens de voorwaarden waaronder ze is gepubliceerd.</string>
+    <string name="about">Over</string>
+    <string name="about_subtitle">%1$s v%2$s: standaard offline, geen accounts, geen tracking</string>
+    <string name="serving_size">Portiegrootte</string>
+    <string name="amount">Hoeveelheid</string>
+    <string name="daily_target">Dagdoel</string>
+    <string name="food_logged">Voeding ingevoerd</string>
+    <string name="goal_saved">Doel opgeslagen</string>
+
+    <string name="language">Taal</string>
+    <string name="language_system">Systeemstandaard</string>
+    <string name="language_en">English</string>
+    <string name="language_nb">Norsk Bokmål</string>
+    <string name="language_pt">Português</string>
+    <string name="language_fr">Français</string>
+    <string name="language_de">Deutsch</string>
+    <string name="language_es">Español</string>
+    <string name="language_sv">Svenska</string>
+    <string name="language_it">Italiano</string>
+    <string name="language_nl">Nederlands</string>
+    <string name="language_da">Dansk</string>
+    <string name="language_fi">Suomi</string>
+
+    <string name="generic_food_database">Algemene voedingsdatabase</string>
+    <string name="country_system">Systeemstandaard</string>
+    <string name="country_system_resolved">Komt nu uit op %1$s.</string>
+    <string name="generic_database_explainer">Gebruikt voor gewone voedingsmiddelen. Merkproducten uit Open Food Facts blijven beschikbaar. Wordt bij de eerste start automatisch ingesteld, tenzij de taal en de provider van je telefoon niet overeenkomen. In dat geval wordt het je één keer gevraagd.</string>
+    <string name="database_language">Namen van voedingsmiddelen worden getoond in: %1$s.</string>
+
+    <string name="choose_database_title">Welke voedingsdatabase?</string>
+    <string name="choose_database_body">Je voedingsdatabase kan %1$s of %2$s zijn. Kies wat past bij waar je echt boodschappen doet. Je kunt dit altijd wijzigen in Instellingen.</string>
+    <string name="choose_database_confirm">Deze database gebruiken</string>
+    <string name="choose_database_skip">Later beslissen</string>
+    <string name="country_us">Verenigde Staten</string>
+    <string name="country_fr">Frankrijk</string>
+    <string name="country_de">Duitsland</string>
+    <string name="country_es">Spanje</string>
+    <string name="country_uk">Verenigd Koninkrijk</string>
+    <string name="country_au">Australië</string>
+    <string name="country_ca">Canada</string>
+    <string name="country_ch">Zwitserland</string>
+    <string name="country_dk">Denemarken</string>
+    <string name="country_fi">Finland</string>
+    <string name="country_nl">Nederland</string>
+    <string name="country_no">Noorwegen</string>
+    <string name="country_nz">Nieuw-Zeeland</string>
+    <string name="country_pt">Portugal</string>
+    <string name="country_se">Zweden</string>
+
+    <string name="undo">Ongedaan maken</string>
+    <string name="entry_deleted">Invoer verwijderd</string>
+    <string name="per_100g">per 100g</string>
+    <string name="add_favorite_cd">Toevoegen aan favorieten</string>
+    <string name="remove_favorite_cd">Verwijderen uit favorieten</string>
+    <string name="search_to_get_started">Zoek een voedingsmiddel om te beginnen. Wat je invoert, verschijnt hier.</string>
+    <string name="nutrition_for">Voedingswaarden voor %1$s (%2$d g)</string>
+    <string name="nutrition_for_amount">Voedingswaarden voor %1$s</string>
+    <string name="export_nothing">Nog niets om te exporteren</string>
+    <string name="export_failed">Exporteren mislukt</string>
+
+    <string name="food_unavailable">Deze voeding is niet meer beschikbaar</string>
+    <string name="food_unavailable_detail">Ze is verwijderd bij een update van de voedingsdatabase, of uit je eigen voeding gewist. Maaltijden die je al hebt ingevoerd, blijven ongewijzigd. Die bewaren hun eigen kopie van de voedingswaarden.</string>
+    <string name="go_back">Terug</string>
+
+    <string name="calorie_summary_cd">%1$d van %2$d kilocalorieën, %3$d over</string>
+    <string name="macro_progress_cd">%1$d van %2$d gram</string>
+    <string name="macro_breakdown_cd">%1$d gram eiwit, %2$d gram vet, %3$d gram koolhydraten</string>
+
+    <string name="portion_serving">portie</string>
+    <string name="portion_cup">kop</string>
+    <string name="portion_tablespoon">eetlepel</string>
+    <string name="portion_teaspoon">theelepel</string>
+    <string name="portion_slice">plak</string>
+    <string name="portion_piece">stuk</string>
+    <string name="portion_unit">stuk</string>
+    <string name="portion_bar">reep</string>
+    <string name="portion_bottle">fles</string>
+    <string name="portion_can">blik</string>
+    <string name="portion_package">verpakking</string>
+    <string name="portion_small">klein</string>
+    <string name="portion_medium">middel</string>
+    <string name="portion_large">groot</string>
+    <string name="portion_steak">biefstuk</string>
+    <string name="portion_roast">braadstuk</string>
+    <string name="portion_fillet">filet</string>
+    <string name="portion_jar">pot</string>
+    <string name="portion_extra_small">extra klein</string>
+    <string name="portion_extra_large">extra groot</string>
+    <string name="mass_unit_title">Gewicht en lengte</string>
+    <string name="mass_unit_metric">Kilogram en centimeter</string>
+    <string name="mass_unit_imperial_us">Pond, voet en inch (VS)</string>
+    <string name="mass_unit_imperial_uk">Stone, voet en inch (VK)</string>
+    <string name="energy_unit_title">Energie-eenheid</string>
+    <string name="energy_unit_kcal">Kilocalorieën (kcal)</string>
+    <string name="energy_unit_kj">Kilojoules (kJ)</string>
+    <string name="energy_kcal">kcal</string>
+    <string name="energy_kj">kJ</string>
+    <string name="value_must_be_zero_or_more">Vul een getal van nul of meer in.</string>
+    <string name="amount_unit_not_convertible">Voor deze eenheid is van deze voeding geen gewicht bekend. Kies een andere eenheid.</string>
+    <string name="value_looks_unusually_large">Dat is een erg grote hoeveelheid. Kijk er nog even naar.</string>
+    <string name="energy_does_not_match_macros">Deze macro\'s komen uit op ongeveer %1$d kcal.</string>
+    <string name="calories_below_safe_minimum">Doelen onder %1$d kcal per dag vragen om medische begeleiding, dus deze app stelt ze niet in.</string>
+    <string name="calories_below_floor">Onder %1$d kcal per dag is het moeilijk om genoeg vitamines en mineralen uit voeding te halen.</string>
+    <string name="searching_announcement">Zoeken</string>
+    <plurals name="search_results_count">
+        <item quantity="one">%1$d resultaat</item>
+        <item quantity="other">%1$d resultaten</item>
+    </plurals>
+    <string name="diary_back_to_today">Terug naar vandaag</string>
+    <string name="diary_past_entry_date">Eerdere invoer · %1$s</string>
+    <string name="diary_add_to_date">Toevoegen aan dagboek · %1$s</string>
+
+    <string name="diary_history">Geschiedenis</string>
+    <string name="diary_history_intake">Ingevoerde inname</string>
+    <string name="diary_history_summary">%1$d van %2$d dagen ingevoerd · gemiddeld %3$s</string>
+    <string name="diary_history_summary_target">doel %1$s</string>
+    <string name="diary_history_7_days">7 dagen</string>
+    <string name="diary_history_28_days">28 dagen</string>
+    <string name="diary_history_energy">Energie</string>
+    <string name="diary_history_no_entries">Geen invoer</string>
+    <string name="diary_history_failed">De geschiedenis kon niet worden geladen.</string>
+    <string name="diary_history_retry">Opnieuw proberen</string>
+    <string name="saved_goals">Opgeslagen doelen</string>
+    <string name="edit_saved_goals">Doelen bewerken</string>
+    <string name="goals_from">Vanaf %1$s</string>
+    <string name="goals_range">%1$s – %2$s</string>
+    <string name="goals_range_note">Wijzigingen gelden voor deze periode. Ingevoerde voeding blijft ongewijzigd.</string>
+    <string name="goals_new_note">Nieuwe doelen gelden vanaf vandaag.</string>
+    <string name="delete_goals_title">Opgeslagen doelen verwijderen?</string>
+    <string name="delete_goals_note">Voor deze periode gelden dan de vorige opgeslagen doelen, of de standaarddoelen als die er niet zijn. Ingevoerde voeding blijft ongewijzigd.</string>
+    <string name="no_saved_goals">Geen opgeslagen doelen voor deze datum.</string>
+    <string name="goals_load_failed">De doelen konden niet worden geladen. Probeer het opnieuw.</string>
+    <string name="goals_change_failed">De doelen konden niet worden gewijzigd. Probeer het opnieuw, of open ze opnieuw als ze ergens anders zijn gewijzigd.</string>
+    <string name="target_max">Vul %1$s of minder in.</string>
+    <string name="day_options">Dagopties</string>
+    <string name="clear_entries">Invoer wissen</string>
+    <string name="clear_entries_title">Invoer voor %1$s wissen?</string>
+    <string name="clear_entries_note">Alle ingevoerde voeding voor deze datum wordt verwijderd. Doelen, gewicht en opgeslagen voeding blijven ongewijzigd.</string>
+    <string name="entries_cleared">Invoer gewist</string>
+    <string name="entries_change_failed">De invoer kon niet worden gewijzigd. Probeer het opnieuw.</string>
+</resources>

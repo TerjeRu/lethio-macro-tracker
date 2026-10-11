@@ -1,0 +1,36 @@
+# input	expected
+# Generated from fold_name() in tools/build_nutrition_db.py.
+# NameFoldingTest (Kotlin) and tools/test_name_folding.py both assert against this
+# file, so the two implementations cannot drift apart unnoticed.
+Butter, salted	butter, salted
+BUTTER	butter
+Egg, whole, raw, fresh	egg, whole, raw, fresh
+ÉPINARDS	epinards
+crème fraîche	creme fraiche
+Plant-based pâté, prepacked	plant-based pate, prepacked
+Potato, sautéed/pan-fried with fat	potato, sauteed/pan-fried with fat
+Œuf, cru	oeuf, cru
+œuf dur	oeuf dur
+Müsli	musli
+Ei, roh	ei, roh
+Hähnchenbrust	hahnchenbrust
+Weißbrot	weissbrot
+MAß	mass
+Piña colada	pina colada
+Melocotón	melocoton
+Jamón serrano	jamon serrano
+Rødbete	rodbete
+Smør	smor
+Łódź	lodz
+Ærøskøbing	aeroskobing
+Tomato, green, raw	tomato, green, raw
+Oranges, raw, navels	oranges, raw, navels
+café-au-lait	cafe-au-lait
+något	nagot
+Sauce piment ail et gingembre Ayam™	sauce piment ail et gingembre ayamtm
+Radiatori № 137	radiatori no 137
+Café ½ litre	cafe 1⁄2 litre
+ﬁlet	filet
+Kjøttdeig, rå	kjottdeig, ra
+Brød med smør	brod med smor
+Flødeið Łódź	flodeid lodz

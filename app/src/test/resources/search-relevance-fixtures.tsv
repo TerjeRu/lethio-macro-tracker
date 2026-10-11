@@ -1,0 +1,275 @@
+# query<TAB>country<TAB>language<TAB>acceptable regex<TAB>unacceptable regex
+#
+# Judged relevance cases. A case PASSES when at least one of the top-k display names matches an
+# acceptable pattern AND none of them match an unacceptable one. Both columns matter:
+# with only an acceptable pattern, a case passes on any list holding one good row however much
+# rubbish sits above it.
+#
+# HOW THESE WERE JUDGED
+#   Acceptable = "a person who typed this would call this result correct." Unacceptable = "seeing
+#   this in the top five is a bug", which in practice means a derivative or a composite dish
+#   crowding out the plain food: juice/flour/powder for a fruit or grain, soup/pie/cake for an
+#   ingredient, a dish that merely *contains* the thing.
+#   Cases were written from what a correct answer looks like, NOT from what the ranking currently
+#   returns. Some cases fail on purpose. Do not weaken one to make it pass.
+#
+#   Where a national table lacks the plain food -- Swedish has no bare "Banan", only
+#   Bananchips/Banan torkad/Banan friterad -- the acceptable pattern also admits the plain row
+#   another source supplies, because reaching it is exactly what the fallback shelf is for.
+#
+# WRITE (?i) ON EVERY ALTERNATIVE. The cell is split on `|` before compiling. The evaluator now
+# reads the flag once for the whole cell, but writing it per alternative stays the clearer habit.
+#
+# ---------------------------------------------------------------- English (US, usda primary)
+butter salted	US	en	(?i)butter	(?i)butter bean|(?i)peanut|(?i)cocoa butter|(?i)shea
+milk whole	US	en	(?i)milk	(?i)waffle|(?i)fermented|(?i)powder|(?i)chocolate
+bread wholemeal	UK	en	(?i)bread	(?i)breadcrumb|(?i)pudding|(?i)sauce
+whole wheat bread	US	en	(?i)bread	(?i)breadcrumb|(?i)pudding|(?i)stuffing
+boiled potato	US	en	(?i)potato	(?i)potato flour|(?i)crisp|(?i)chip|(?i)salad
+chicken breast raw	US	en	(?i)chicken breast	(?i)breaded|(?i)tender|(?i)nugget|(?i)soup
+olive oil extra virgin	FR	en	(?i)olive oil	(?i)tuna|(?i)mayonnaise|(?i)margarine
+orange juice	US	en	(?i)orange.*juice	(?i)orange peel|(?i)marmalade
+peanut butter	US	en	(?i)peanut butter	(?i)peanut oil|(?i)peanut flour
+rice cooked	US	en	(?i)rice	(?i)rice flour|(?i)rice cake|(?i)pudding|(?i)wine
+egg raw	US	en	(?i)egg	(?i)eggplant|(?i)noodle|(?i)substitute|(?i)nog
+cheddar cheese	US	en	(?i)cheddar	(?i)popcorn|(?i)cracker|(?i)sauce|(?i)soup
+yogurt plain	US	en	(?i)yogh?urt	(?i)covered|(?i)bar|(?i)drink|(?i)frozen
+salmon raw	US	en	(?i)salmon	(?i)pat[eé]|(?i)spread|(?i)salad
+almonds	US	en	(?i)almond	(?i)almond milk|(?i)candies|(?i)chocolate|(?i)almond butter|(?i)almond oil
+lentils	US	en	(?i)lentil	(?i)soup|(?i)flour|(?i)curry
+oats	US	en	(?i)oat	(?i)drink|(?i)milk|(?i)bread|(?i)cookie|(?i)bar
+banana	US	en	(?i)banana	(?i)chip|(?i)bread|(?i)flour|(?i)dried|(?i)fried|(?i)smoothie
+apple	US	en	(?i)apple	(?i)juice|(?i)sauce|(?i)pie|(?i)cider|(?i)pineapple
+carrot	US	en	(?i)carrot	(?i)juice|(?i)cake|(?i)soup
+onion	US	en	(?i)onion	(?i)ring|(?i)soup|(?i)powder|(?i)fried
+tomato	US	en	(?i)tomato	(?i)ketchup|(?i)sauce|(?i)soup|(?i)paste|(?i)juice
+spinach	US	en	(?i)spinach	(?i)soup|(?i)dip|(?i)quiche
+beef mince raw	US	en	(?i)beef	(?i)jerky|(?i)soup|(?i)pie|(?i)stew
+cod raw	US	en	(?i)cod	(?i)liver oil|(?i)cake|(?i)roe|(?i)cocoa
+tuna canned	US	en	(?i)tuna	(?i)salad|(?i)casserole|(?i)melt
+honey	US	en	(?i)honey	(?i)mustard|(?i)cake|(?i)roast|(?i)nut cheerio
+sugar white	US	en	(?i)sugar	(?i)cookie|(?i)snap|(?i)coated
+lettuce	US	en	(?i)lettuce	(?i)salad dressing|(?i)sandwich
+pasta cooked	US	en	(?i)pasta|(?i)macaroni|(?i)spaghetti	(?i)salad|(?i)sauce|(?i)canned
+milk semi skimmed	UK	en	(?i)milk	(?i)powder|(?i)chocolate|(?i)condensed
+baked beans	UK	en	(?i)bean	(?i)sprout|(?i)coffee|(?i)vanilla
+# ---------------------------------------------------------------- Spanish (ES, bedca primary)
+leche	ES	es	(?i)milk|(?i)leche	(?i)dulce de leche|(?i)arroz con leche|(?i)leche creme
+pan	ES	es	(?i)^pan\b	(?i)rallado|(?i)pudin|(?i)tostada.*aceite
+queso	ES	es	(?i)queso	(?i)tarta|(?i)sopa|(?i)salsa
+mantequilla	ES	es	(?i)mantequilla	(?i)cacahuete|(?i)galleta
+huevo	ES	es	(?i)huevo	(?i)flan|(?i)tortilla|(?i)pasta
+yogur	ES	es	(?i)yogur	(?i)helado|(?i)bebida|(?i)tarta
+manzana	ES	es	(?i)manzana	(?i)zumo|(?i)compota|(?i)tarta|(?i)sidra
+platano	ES	es	(?i)pl[aá]tano|(?i)banana	(?i)chips|(?i)frito|(?i)harina
+naranja	ES	es	(?i)naranja	(?i)zumo|(?i)mermelada|(?i)refresco
+tomate	ES	es	(?i)tomate	(?i)ketchup|(?i)salsa|(?i)sopa|(?i)frito
+patata	ES	es	(?i)patata	(?i)frita|(?i)chips|(?i)pur[eé]|(?i)tortilla
+zanahoria	ES	es	(?i)zanahoria	(?i)zumo|(?i)pastel|(?i)sopa
+cebolla	ES	es	(?i)cebolla	(?i)sopa|(?i)frita|(?i)aro
+pollo	ES	es	(?i)pollo	(?i)caldo|(?i)sopa|(?i)empanado|(?i)nugget
+ternera	ES	es	(?i)ternera	(?i)caldo|(?i)sopa|(?i)empanad
+cerdo	ES	es	(?i)cerdo	(?i)caldo|(?i)sopa|(?i)embutido
+jamon	ES	es	(?i)jam[oó]n	(?i)croqueta|(?i)sopa
+salmon	ES	es	(?i)salm[oó]n	(?i)pat[eé]|(?i)sopa
+atun	ES	es	(?i)at[uú]n	(?i)ensalada|(?i)empanad
+arroz	ES	es	(?i)arroz	(?i)harina|(?i)con leche|(?i)pastel|(?i)bebida
+lentejas	ES	es	(?i)lenteja	(?i)sopa|(?i)harina|(?i)guiso
+garbanzos	ES	es	(?i)garbanzo	(?i)harina|(?i)sopa|(?i)hummus
+avena	ES	es	(?i)avena	(?i)pan de|(?i)cereales|(?i)harina|(?i)bebida|(?i)drink
+aceite de oliva	ES	es	(?i)aceite de oliva	(?i)at[uú]n|(?i)conserva
+miel	ES	es	(?i)miel	(?i)turr[oó]n|(?i)pastel
+# ---------------------------------------------------------------- French (FR, ciqual primary)
+lait	FR	fr	(?i)lait	(?i)poudre|(?i)concentr|(?i)chocolat|(?i)dessert
+huile	FR	fr	(?i)oil|(?i)huile	(?i)engine|(?i)essential|(?i)conserve
+pain	FR	fr	(?i)pain	(?i)perdu|(?i)chapelure|(?i)pudding
+fromage	FR	fr	(?i)fromage	(?i)tarte|(?i)soupe|(?i)sauce
+beurre	FR	fr	(?i)beurre	(?i)cacahu[eè]te|(?i)cacao|(?i)demi-sel.*all[eé]g
+oeuf	FR	fr	(?i)oeuf|(?i)œuf	(?i)p[aâ]te|(?i)mayonnaise|(?i)flan
+yaourt	FR	fr	(?i)yaourt	(?i)glac|(?i)boisson|(?i)tarte
+pomme	FR	fr	(?i)^pomme,	(?i)pomme de terre|(?i)jus|(?i)compote|(?i)tarte|(?i)cidre
+banane	FR	fr	(?i)banane	(?i)chips|(?i)farine|(?i)confiture
+orange	FR	fr	(?i)orange	(?i)jus|(?i)confiture|(?i)soda
+tomate	FR	fr	(?i)tomate	(?i)ketchup|(?i)sauce|(?i)soupe|(?i)concentr
+pomme de terre	FR	fr	(?i)pomme de terre	(?i)chips|(?i)frite|(?i)pur[eé]e|(?i)farine
+carotte	FR	fr	(?i)carotte	(?i)jus|(?i)g[aâ]teau|(?i)soupe
+oignon	FR	fr	(?i)oignon	(?i)soupe|(?i)frit|(?i)beignet
+poulet	FR	fr	(?i)poulet	(?i)bouillon|(?i)pan[eé]|(?i)nugget|(?i)soupe
+boeuf	FR	fr	(?i)boeuf|(?i)bœuf	(?i)bouillon|(?i)soupe|(?i)pot-au-feu
+porc	FR	fr	(?i)porc	(?i)bouillon|(?i)p[aâ]t[eé]|(?i)rillettes
+jambon	FR	fr	(?i)jambon	(?i)soupe|(?i)quiche
+saumon	FR	fr	(?i)saumon	(?i)rillettes|(?i)terrine|(?i)soupe
+thon	FR	fr	(?i)thon	(?i)salade|(?i)rillettes
+riz	FR	fr	(?i)riz	(?i)farine|(?i)g[aâ]teau|(?i)boisson|(?i)au lait
+lentilles	FR	fr	(?i)lentille	(?i)soupe|(?i)farine
+sucre	FR	fr	(?i)sucre	(?i)biscuit|(?i)confiserie
+miel	FR	fr	(?i)miel	(?i)pain d'[eé]pices|(?i)g[aâ]teau
+eau	FR	fr	(?i)eau	(?i)aromatis|(?i)sucr|(?i)soda
+# ---------------------------------------------------------------- German (DE, bls primary)
+milch	DE	de	(?i)milch	(?i)teig|(?i)pulver|(?i)schokolade|(?i)brei
+brot	DE	de	(?i)brot	(?i)aufstrich|(?i)frucht|(?i)mischung|(?i)russisch|(?i)parmesan
+kase	DE	de	(?i)k[aä]se	(?i)kuchen|(?i)suppe|(?i)sauce|(?i)sosse
+butter	DE	de	(?i)butter	(?i)milch|(?i)erdnuss|(?i)kakao|(?i)keks
+ei	DE	de	(?i)^ei\b|(?i)^eier	(?i)nudel|(?i)likör|(?i)teig|(?i)eis
+joghurt	DE	de	(?i)joghurt	(?i)eis|(?i)getr[aä]nk|(?i)drink
+apfel	DE	de	(?i)apfel	(?i)saft|(?i)mus|(?i)kuchen|(?i)wein|(?i)schlafrock
+banane	DE	de	(?i)banane	(?i)chips|(?i)getrocknet|(?i)mehl|(?i)mus
+orange	DE	de	(?i)orange	(?i)saft|(?i)marmelade|(?i)limonade
+tomate	DE	de	(?i)tomate	(?i)ketchup|(?i)sauce|(?i)suppe|(?i)mark
+kartoffel	DE	de	(?i)kartoffel	(?i)chips|(?i)pommes|(?i)brei|(?i)mehl|(?i)salat
+karotte	DE	de	(?i)karotte|(?i)m[oö]hre	(?i)saft|(?i)kuchen|(?i)suppe
+zwiebel	DE	de	(?i)zwiebel	(?i)suppe|(?i)ring|(?i)kuchen
+hahnchen	DE	de	(?i)h[aä]hnchen	(?i)br[uü]he|(?i)paniert|(?i)nugget|(?i)suppe
+rindfleisch	DE	de	(?i)rind	(?i)br[uü]he|(?i)wurst|(?i)eintopf
+schweinefleisch	DE	de	(?i)schwein	(?i)br[uü]he|(?i)wurst|(?i)eintopf
+schinken	DE	de	(?i)schinken	(?i)suppe|(?i)pizza
+lachs	DE	de	(?i)lachs	(?i)creme|(?i)suppe|(?i)paste
+reis	DE	de	(?i)reis	(?i)mehl|(?i)kuchen|(?i)getr[aä]nk|(?i)brei
+linsen	DE	de	(?i)linse	(?i)linsensuppe|(?i)mehl|(?i)eintopf
+zucker	DE	de	(?i)zucker	(?i)geb[aä]ck|(?i)waffel
+honig	DE	de	(?i)honig	(?i)kuchen|(?i)senf|(?i)lebkuchen
+olivenol	DE	de	(?i)oliven[oö]l	(?i)thunfisch|(?i)konserve
+wasser	DE	de	(?i)wasser	(?i)aromatisiert|(?i)limonade|(?i)zucker
+bier	DE	de	(?i)bier	(?i)suppe|(?i)teig
+# ---------------------------------------------------------------- Swedish (SE, livsmedel primary)
+mjolk	SE	sv	(?i)mj[oö]lk	(?i)pulver|(?i)choklad|(?i)glass|(?i)gr[oö]t
+brod	SE	sv	(?i)br[oö]d	(?i)str[oö]br[oö]d|(?i)pudding|(?i)smulor
+ost	SE	sv	(?i)^ost\b	(?i)soppa|(?i)s[aå]s|(?i)paj|(?i)kaka
+smor	SE	sv	(?i)^sm[oö]r\b	(?i)blandning|(?i)rapsolja|(?i)s[aå]s|(?i)gr[aä]dds
+agg	SE	sv	(?i)^[aä]gg\b	(?i)nudel|(?i)likör|(?i)r[oö]ra|(?i)pulver
+yoghurt	SE	sv	(?i)yoghurt	(?i)glass|(?i)dryck|(?i)smoothie
+apple	SE	sv	(?i)^[aä]pple\b	(?i)soppa|(?i)paj|(?i)kompott|(?i)sylt|(?i)mos|(?i)kr[aä]m|(?i)juice|(?i)must
+banan	SE	sv	(?i)^banan\b|(?i)^banana	(?i)chips|(?i)torkad|(?i)friterad|(?i)kokbanan|(?i)smoothie|(?i)gratäng
+apelsin	SE	sv	(?i)apelsin	(?i)juice|(?i)marmelad|(?i)l[aä]sk
+tomat	SE	sv	(?i)tomat	(?i)ketchup|(?i)s[aå]s|(?i)soppa|(?i)pur[eé]
+potatis	SE	sv	(?i)potatis	(?i)chips|(?i)pommes|(?i)mos|(?i)mj[oö]l|(?i)sallad
+morot	SE	sv	(?i)^morot\b	(?i)juice|(?i)kaka|(?i)soppa|(?i)tzatziki|(?i)stuvad
+lok	SE	sv	(?i)^l[oö]k\b	(?i)soppa|(?i)ring|(?i)gryta|(?i)stekt
+kyckling	SE	sv	(?i)kyckling	(?i)buljong|(?i)panerad|(?i)nugget|(?i)soppa|(?i)gryta
+notkott	SE	sv	(?i)n[oö]tk[oö]tt|(?i)beef	(?i)buljong|(?i)soppa|(?i)korv
+flask	SE	sv	(?i)fl[aä]sk|(?i)gris|(?i)pork	(?i)buljong|(?i)soppa|(?i)korv
+skinka	SE	sv	(?i)skinka	(?i)soppa|(?i)pizza
+lax	SE	sv	(?i)^lax\b	(?i)r[oö]ra|(?i)soppa|(?i)pastej
+ris	SE	sv	(?i)^ris\b	(?i)mj[oö]l|(?i)kaka|(?i)dryck|(?i)grynsgr[oö]t
+linser	SE	sv	(?i)lins	(?i)soppa|(?i)mj[oö]l|(?i)gryta
+socker	SE	sv	(?i)socker	(?i)kaka|(?i)bulle
+honung	SE	sv	(?i)honung	(?i)kaka|(?i)senap
+olivolja	SE	sv	(?i)olivolja	(?i)konserv|(?i)tonfisk
+ol	SE	sv	(?i)^[oö]l\b	(?i)potatis|(?i)marmelad|(?i)kvarg|(?i)soppa
+vatten	SE	sv	(?i)vatten	(?i)smaksatt|(?i)l[aä]sk|(?i)socker
+# ---------------------------------------------------------------- Finnish (FI, fineli primary)
+maito	FI	fi	(?i)maito	(?i)jauhe|(?i)suklaa|(?i)j[aä][aä]tel[oö]|(?i)puuro
+leipa	FI	fi	(?i)leip[aä]	(?i)t[aä]ytetty|(?i)rasva|(?i)korppu|(?i)pikkelssi
+juusto	FI	fi	(?i)juusto	(?i)keitto|(?i)kastike|(?i)piirakka
+voi	FI	fi	(?i)^voi\b	(?i)leip[aä]|(?i)kastike|(?i)taikina
+kananmuna	FI	fi	(?i)kananmuna|(?i)muna	(?i)nuudeli|(?i)jauhe|(?i)likööri
+jogurtti	FI	fi	(?i)jogurtti	(?i)j[aä][aä]tel[oö]|(?i)juoma
+omena	FI	fi	(?i)omena	(?i)mehu|(?i)hillo|(?i)piirakka|(?i)sose
+banaani	FI	fi	(?i)banaani	(?i)lastu|(?i)kuivattu|(?i)jauho
+appelsiini	FI	fi	(?i)appelsiini	(?i)mehu|(?i)marmeladi
+tomaatti	FI	fi	(?i)tomaatti	(?i)ketsuppi|(?i)kastike|(?i)keitto|(?i)s[oö]ose
+peruna	FI	fi	(?i)peruna	(?i)lastu|(?i)ranskalai|(?i)sose|(?i)jauho|(?i)salaatti
+porkkana	FI	fi	(?i)^porkkana\b	(?i)mehu|(?i)kakku|(?i)keitto|(?i)piirakka|(?i)wokat
+sipuli	FI	fi	(?i)sipuli	(?i)keitto|(?i)sipulirengas|(?i)wokat
+kana	FI	fi	(?i)^kana\b|(?i)broileri	(?i)liemi|(?i)keitto|(?i)nugget
+naudanliha	FI	fi	(?i)nauta|(?i)naudan	(?i)liemi|(?i)keitto|(?i)makkara
+sianliha	FI	fi	(?i)sika|(?i)sian	(?i)liemi|(?i)keitto|(?i)makkara
+lohi	FI	fi	(?i)lohi	(?i)keitto|(?i)tahna|(?i)salaatti
+riisi	FI	fi	(?i)riisi	(?i)jauho|(?i)kakku|(?i)juoma|(?i)puuro
+linssi	FI	fi	(?i)linssi	(?i)keitto|(?i)jauho
+sokeri	FI	fi	(?i)sokeri	(?i)keksi|(?i)leivos
+hunaja	FI	fi	(?i)hunaja	(?i)kakku|(?i)sinappi
+oliivioljy	FI	fi	(?i)oliivi[oö]ljy	(?i)s[aä]ilyke|(?i)tonnikala
+vesi	FI	fi	(?i)^vesi\b	(?i)maustettu|(?i)limonadi
+# ---------------------------------------------------------------- Norwegian (NO, matvaretabellen primary)
+melk	NO	nb	(?i)melk	(?i)pulver|(?i)sjokolade|(?i)is\b|(?i)gr[oø]t
+brod	NO	nb	(?i)br[oø]d	(?i)smule|(?i)pudding|(?i)p[aå]legg
+ost	NO	nb	(?i), ost$|(?i)^ost	(?i)pasta|(?i)panetter|(?i)pizza|(?i)saus
+smor	NO	nb	(?i)^sm[oø]r\b	(?i)blanding|(?i)saus|(?i)peanøtt
+egg	NO	nb	(?i)^egg\b	(?i)nudler|(?i)likør|(?i)pulver
+eple	NO	nb	(?i)^eple\b	(?i)juice|(?i)most|(?i)kake|(?i)mos|(?i)kompott
+banan	NO	nb	(?i)^banan\b	(?i)chips|(?i)t[oø]rket|(?i)mel
+appelsin	NO	nb	(?i)appelsin	(?i)juice|(?i)marmelade|(?i)brus
+tomat	NO	nb	(?i)tomat	(?i)ketchup|(?i)saus|(?i)suppe|(?i)pur[eé]
+potet	NO	nb	(?i)potet	(?i)chips|(?i)pommes|(?i)mos|(?i)mel|(?i)salat
+gulrot	NO	nb	(?i)gulr[oø]t	(?i)juice|(?i)kake|(?i)suppe
+lok	NO	nb	(?i)^l[oø]k\b	(?i)suppe|(?i)ring|(?i)stekt
+kylling	NO	nb	(?i)kylling	(?i)buljong|(?i)panert|(?i)nugget|(?i)suppe
+svinekjott	NO	nb	(?i)svin	(?i)buljong|(?i)suppe|(?i)p[oø]lse|(?i)villsvin
+storfekjott	NO	nb	(?i)storfe	(?i)buljong|(?i)suppe|(?i)p[oø]lse|(?i)lapskaus|(?i)fett fra
+laks	NO	nb	(?i)^laks\b	(?i)r[oø]re|(?i)suppe|(?i)postei
+ris	NO	nb	(?i)^ris\b	(?i)mel|(?i)kake|(?i)drikk|(?i)grøt
+linser	NO	nb	(?i)linse	(?i)suppe|(?i)mel
+sukker	NO	nb	(?i)sukker	(?i)kake|(?i)kjeks
+honning	NO	nb	(?i)honning	(?i)kake|(?i)sennep
+olivenolje	NO	nb	(?i)olivenolje	(?i)konserv|(?i)tunfisk
+vann	NO	nb	(?i)^vann\b	(?i)smakstilsatt|(?i)brus
+# ---------------------------------------------------------------- Danish (DK, frida primary)
+maelk	DK	da	(?i)m[aæ]lk	(?i)kakao|(?i)b[oø]tte|(?i)is af|(?i)pulver|(?i)chokolade
+rugbrod	DK	da	(?i)rugbr[oø]d	(?i)revet|(?i)pudding
+ost	DK	da	(?i)^ost\b	(?i)suppe|(?i)sauce|(?i)kage
+smor	DK	da	(?i)^sm[oø]r\b	(?i)blanding|(?i)sauce|(?i)peanut
+aeg	DK	da	(?i)^[aæ]g\b	(?i)nudler|(?i)likør|(?i)pulver
+yoghurt	DK	da	(?i)yoghurt	(?i)is\b|(?i)drik
+aeble	DK	da	(?i)^[aæ]ble\b	(?i)juice|(?i)most|(?i)kage|(?i)gr[oø]d|(?i)kompot
+banan	DK	da	(?i)^banan	(?i)chips|(?i)t[oø]rret|(?i)banana, dried
+appelsin	DK	da	(?i)appelsin	(?i)juice|(?i)marmelade|(?i)sodavand
+tomat	DK	da	(?i)tomat	(?i)ketchup|(?i)sauce|(?i)suppe|(?i)pur[eé]
+kartoffel	DK	da	(?i)kartoffel	(?i)pommes|(?i)kartoffelmos|(?i)kartoffelmel|(?i)salat
+gulerod	DK	da	(?i)gulerod|(?i)gulerødder	(?i)juice|(?i)kage|(?i)suppe
+løg	DK	da	(?i)^l[oø]g	(?i)suppe|(?i)løgring|(?i)sovs
+kylling	DK	da	(?i)kylling	(?i)bouillon|(?i)paneret|(?i)nugget|(?i)suppe
+oksekod	DK	da	(?i)okse	(?i)bouillon|(?i)suppe|(?i)p[oø]lse
+svinekod	DK	da	(?i)svin	(?i)bouillon|(?i)suppe|(?i)p[oø]lse|(?i)kalv
+laks	DK	da	(?i)^laks\b	(?i)salat|(?i)suppe|(?i)postej
+ris	DK	da	(?i)^ris,	(?i)risdrik|(?i)ristet|(?i)riskiks
+linser	DK	da	(?i)linse	(?i)suppe|(?i)mel
+sukker	DK	da	(?i)sukker	(?i)kage|(?i)kiks
+honning	DK	da	(?i)honning	(?i)kage|(?i)sennep
+olivenolie	DK	da	(?i)olivenolie	(?i)konserv|(?i)tun
+# ---------------------------------------------------------------- Portuguese (PT, tca primary)
+leite	PT	pt	(?i)leite gordo|(?i)leite magro|(?i)leite meio	(?i)creme|(?i)condensado|(?i)evaporado|(?i)humano|(?i)gelado
+pao	PT	pt	(?i)p[aã]o	(?i)ralado|(?i)pudim|(?i)torrada
+queijo	PT	pt	(?i)queijo	(?i)bolo|(?i)sopa|(?i)molho
+manteiga	PT	pt	(?i)manteiga	(?i)amendoim|(?i)cacau|(?i)bolo
+ovo	PT	pt	(?i)^ovo	(?i)massa|(?i)doce|(?i)pudim
+iogurte	PT	pt	(?i)iogurte	(?i)gelado|(?i)bebida
+maca	PT	pt	(?i)^ma[cç][aã]	(?i)sumo|(?i)compota|(?i)bolo|(?i)tarte
+banana	PT	pt	(?i)^banana	(?i)seca|(?i)frita|(?i)farinha
+laranja	PT	pt	(?i)laranja	(?i)sumo|(?i)doce|(?i)refrigerante
+tomate	PT	pt	(?i)tomate	(?i)ketchup|(?i)molho|(?i)sopa|(?i)polpa
+batata	PT	pt	(?i)batata	(?i)frita|(?i)pur[eé]|(?i)farinha|(?i)salada
+cenoura	PT	pt	(?i)cenoura	(?i)sumo|(?i)bolo|(?i)sopa
+cebola	PT	pt	(?i)cebola	(?i)sopa|(?i)frita
+frango	PT	pt	(?i)frango	(?i)caldo|(?i)sopa|(?i)panado|(?i)arroz de
+carne de vaca	PT	pt	(?i)vaca|(?i)bovino	(?i)caldo|(?i)sopa|(?i)enchido
+porco	PT	pt	(?i)porco	(?i)caldo|(?i)sopa|(?i)enchido
+salmao	PT	pt	(?i)salm[aã]o	(?i)pat[eê]|(?i)sopa
+arroz	PT	pt	(?i)arroz agulha|(?i)arroz carolino|(?i)arroz branco|(?i)arroz integral|(?i)arroz vaporizado	(?i)doce|(?i)de pato|(?i)de peixe|(?i)bolo|(?i)de lulas|(?i)de frango
+feijao	PT	pt	(?i)feij[aã]o	(?i)sopa|(?i)arroz de|(?i)feijoada
+acucar	PT	pt	(?i)a[cç][uú]car	(?i)bolo|(?i)bolacha
+mel	PT	pt	(?i)^mel\b	(?i)bolo|(?i)mostarda
+azeite	PT	pt	(?i)azeite	(?i)conserva|(?i)atum
+agua	PT	pt	(?i)[aá]gua	(?i)aromatizada|(?i)refrigerante|(?i)com a[cç][uú]car
+# ------------------------------------------------- Small-table misses: the fallback shelf's job
+# bedca (736 rows) has no oats and no lentils of its own; swiss has neither those nor cucumber.
+# A reader in Spain or Switzerland must still reach them, from another generic source rather than
+# from branded products.
+oats	ES	es	(?i)avena|(?i)oat	(?i)drink|(?i)bebida|(?i)pan de|(?i)cereales
+lentils	ES	es	(?i)lenteja|(?i)lentil	(?i)sopa|(?i)soup|(?i)harina
+oats	CH	de	(?i)hafer|(?i)oat|(?i)avoine	(?i)drink|(?i)getr[aä]nk|(?i)brot|(?i)flocken.*riegel
+lentils	CH	de	(?i)linse|(?i)lentil|(?i)lentille	(?i)suppe|(?i)soup|(?i)soupe
+cucumber	CH	de	(?i)gurke|(?i)cucumber|(?i)concombre	(?i)essig|(?i)pickle|(?i)salat|(?i)cornichon
+quinoa	ES	es	(?i)quinoa	(?i)barrita|(?i)snack
+tofu	SE	sv	(?i)tofu	(?i)korv|(?i)f[aä]rs
+# ----------------------------------------------------- Compound words: the cross-cutting defect
+# Nordic and German tables store the basic food as a compound -- Vollkornbrot, Skummetmælk,
+# Ruisleipä, Sødmælk -- while FTS5 prefix matching only reaches token prefixes. A reader typing
+# the bare word therefore cannot reach the compound, and a reader typing the compound cannot
+# reach a table that separates it ("Svin, nakkekoteletter"). These cases pin both directions.
+# They are expected to fail until that is addressed; see the findings.
+vollkornbrot	DE	de	(?i)vollkornbrot|(?i)wholemeal	(?i)aufstrich|(?i)mischung
+skummetmaelk	DK	da	(?i)skummetm[aæ]lk|(?i)skimmed	(?i)pulver|(?i)powder
+sodmaelk	DK	da	(?i)s[oø]dm[aæ]lk|(?i)whole milk	(?i)pulver|(?i)powder
+ruisleipa	FI	fi	(?i)ruisleip[aä]|(?i)rye bread	(?i)korppu|(?i)rasva
+kyllingfilet	NO	nb	(?i)kylling	(?i)rosmarin|(?i)soltørket|(?i)spiseklar|(?i)pepper &

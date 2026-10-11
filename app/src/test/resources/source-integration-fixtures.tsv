@@ -1,0 +1,74 @@
+# query	country	language	acceptable regex	unacceptable regex
+# Expectations written from NEVO 2025/9.0 and FOODfiles 2024 v1.
+# Evaluate TOP ONE. Keep separate from the frozen existing-country fixtures.
+# Patterns constrain the food/state, not a particular cultivar or database winner.
+# A dash is a verified national-table coverage gap, not a ranking success/failure.
+# Local raw-record ID evidence: build/132/148/new-fixture-source-evidence.json.
+# Ordinary Dutch staples, specific preparation states, compound and plural probes.
+aardappelen	NL	nl	(?i)^Aardappelen.*rauw	gekookt|gebakken|friet|puree
+aardappelen gekookt	NL	nl	(?i)^Aardappelen.*gekookt	rauw|gebakken
+appel	NL	nl	(?i)^Appel [mz] schil	moes|flap|carre|gedroogd
+banaan	NL	nl	(?i)^Banaan$	brood|bak-|beignet
+melk volle	NL	nl	(?i)^Melk volle$	chocolade|koffie|gecondenseerd|poeder
+brood	NL	nl	(?i)^Tarwebrood 	krenten|rozijnen|suiker|tosti|beleg|noten
+rijst rauw	NL	nl	(?i)^Rijst witte rauw$	gekookt|pap|noten
+rijst gekookt	NL	nl	(?i)^Rijst witte gekookt$	rauw|pap|noten
+ei rauw	NL	nl	(?i)^Ei kippen-.*rauw	gekookt|gebakken
+ei gekookt	NL	nl	(?i)^Ei kippen-.*gekookt	rauw|gebakken
+kipfilet rauw	NL	nl	(?i)^Kipfilet rauw$	bereid|gegrild|gerookt
+runderbiefstuk rauw	NL	nl	(?i)^Runderbiefstuk.*rauw	bereid|gebakken
+linzen gekookt	NL	nl	(?i)^Linzen.*gekookt	gedroogd|blik|glas
+bonen sperzie rauw	NL	nl	(?i)^Bonen sperzie- rauw$	gekookt|blik|glas
+wortel	NL	nl	(?i)^Wortel.*rauw	gekookt|blik|glas|sap
+wortel gekookt	NL	nl	(?i)^Wortel.*gekookt	rauw|blik|glas
+zalm rauw	NL	nl	(?i)^Zalm.*rauw	gerookt|blik|bereid
+yoghurt	NL	nl	(?i)^Yoghurt volle$|^Yoghurt magere$|^Yoghurt halfvolle$	vruchten|drank|dessert
+kaas goudse	NL	nl	(?i)^Kaas Goudse	brood|saus|smeer
+olijfolie	NL	nl	(?i)^Olie olijf-	dressing|mayonaise
+boter ongezouten	NL	nl	(?i)^Boter ongezouten$	product|melange|kruiden
+suiker kristal	NL	nl	(?i)^Suiker kristal-	basterd|poeder
+water	NL	nl	(?i)^Water 	limonade|ijs|siroop
+koffie	NL	nl	(?i)^Koffie bereid$	melk|suiker|cappuccino|poeder
+champignon rauw	NL	nl	(?i)^Champignon rauw$	gekookt|gebakken|blik|glas
+bloemkool rauw	NL	nl	(?i)^Kool bloem- rauw$	gekookt|saus
+crème fraîche	NL	nl	(?i)^Creme fraiche(?: halfvolle)?$	taart|beurre
+aardappel rauw	NL	nl	(?i)^Aardappelen.*rauw	gekookt|gebakken
+aardapp	NL	nl	(?i)^Aardappelen.*rauw	gekookt|gebakken|puree
+banana	NL	en	(?i)^Banana$	bread|plantain|fritter
+potatoes raw	NL	en	(?i)^Potatoes.*raw	boiled|fried|mashed
+surströmming	NL	nl	-
+# NZ plain foods, raw/cooked pairs, publisher alternative names and Maori accents.
+apple	NZ	en	(?i)^Apple,.*raw	juice|sauce|stewed|baked|dried
+banana	NZ	en	(?i)^Banana, flesh.*raw	chip|cooking|fried|bread|frozen
+potato raw	NZ	en	(?i)^Potato,.*raw	boiled|fried|roasted|mashed|salad
+potato boiled	NZ	en	(?i)^Potato,.*boiled.*drained	mashed|fried|milk|butter|margarine
+kumara raw	NZ	en	(?i)^Kumara,.*raw	boiled|roasted|fried
+kumara boiled	NZ	en	(?i)^Kumara,.*boiled	roasted|raw|fried
+milk standard	NZ	en	(?i)^Milk,.*standard.*fluid	powder|condensed|flavoured|chocolate|lactose-free
+bread white	NZ	en	(?i)^Bread, from white wheat flour, sliced,	gluten free|garlic|fried|crumb|fruit|roll
+rice raw	NZ	en	(?i)^Rice, white,.*raw	cooked|creamed|sushi
+rice cooked	NZ	en	(?i)^Rice, white,.*cooked	creamed|sushi|raw
+egg raw	NZ	en	(?i)^Egg, chicken, white & yolk.*raw	dried|boiled|fried
+egg boiled	NZ	en	(?i)^Egg, chicken, white & yolk.*boiled	raw|white, boiled|yolk, boiled
+chicken breast raw	NZ	en	(?i)^Chicken, breast,.*raw	fried|roasted|crumbed|grilled
+beef mince raw	NZ	en	(?i)^Beef, mince,.*raw	fried|boiled|cooked
+lentil boiled	NZ	en	(?i)^Lentil,.*boiled	dry|canned
+carrot raw	NZ	en	(?i)^Carrot,.*fresh, raw	frozen|juice|baked|boiled|fried
+carrot boiled	NZ	en	(?i)^Carrot,.*fresh, boiled	frozen|juice|raw
+salmon raw	NZ	en	(?i)^Salmon,.*fresh, raw	smoked|canned|fried|baked|steamed
+yoghurt plain	NZ	en	(?i)^Yoghurt, plain,.*unsweetened	Greek|Greek-style|sugar-sweetened|fortified
+cheese edam	NZ	en	(?i)^Cheese, Edam,	sauce|bread|cracker
+olive oil	NZ	en	(?i)^Oil, olive,	dressing|margarine|mayonnaise
+butter unsalted	NZ	en	(?i)^Butter, unsalted$	semisoft|cultured
+sugar white	NZ	en	(?i)^Sugar, white$	brown|icing
+water	NZ	en	(?i)^Water, 	flavoured|soda
+oats raw	NZ	en	(?i)^Oats, grains rolled, raw	toasted|sachets|fruit|cooked
+feijoa	NZ	en	(?i)^Feijoa,.*raw	stewed|sweetened
+kiwifruit raw	NZ	en	(?i)^Kiwifruit,.*raw	juice|dried|canned
+mussel raw	NZ	en	(?i)^Mussel, green, meat, fresh, raw$	marinated|cooked|steamed|fried
+rewena	NZ	en	(?i)^Bread,.*Rewena	fried|crumb
+Māori bread	NZ	en	(?i)^Bread,.*Rewena	fried|crumb
+Maori bread	NZ	en	(?i)^Bread,.*Rewena	fried|crumb
+apples	NZ	en	(?i)^Apple,.*raw	juice|sauce|stewed|baked|dried
+feij	NZ	en	(?i)^Feijoa,.*raw	stewed|sweetened
+stroopwafel	NZ	en	-

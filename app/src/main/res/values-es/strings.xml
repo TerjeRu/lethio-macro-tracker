@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="diary_edit_entry">Editar entrada</string>
+    <string name="diary_save_changes">Guardar cambios</string>
+    <string name="diary_edit_positive_amount">Introduce una cantidad mayor que cero.</string>
+    <string name="diary_edit_failed">No se pudieron guardar los cambios. Tus cambios siguen aquí.</string>
+    <string name="diary_edit_amount_unavailable">No se puede recalcular la cantidad de esta entrada. Aún puedes cambiar la comida.</string>
+    <string name="app_name">Lethio Macro Tracker</string>
+
+    <string name="nav_goals">Objetivos</string>
+    <string name="nav_settings">Ajustes</string>
+
+    <string name="add_food">Añadir alimento</string>
+    <string name="scan_barcode">Escanear código de barras</string>
+    <string name="search_foods">Buscar alimentos</string>
+    <string name="quick_add">Añadir rápido</string>
+    <string name="favorites">Favoritos</string>
+    <string name="recent">Recientes</string>
+
+    <string name="calories">Calorías</string>
+    <string name="protein">Proteínas</string>
+    <string name="fat">Grasas</string>
+    <string name="carbs">Carbohidratos</string>
+    <string name="grams_short">g</string>
+
+    <string name="breakfast">Desayuno</string>
+    <string name="lunch">Almuerzo</string>
+    <string name="dinner">Cena</string>
+    <string name="snacks">Aperitivos</string>
+
+    <string name="of_kcal">de %1$d %2$s</string>
+    <string name="kcal_remaining">%1$d restantes</string>
+    <string name="kcal_over">%1$d por encima</string>
+    <string name="macro_left">quedan %1$s g</string>
+    <string name="macro_over">%1$s g por encima</string>
+    <string name="add_to_meal_cd">Añadir alimento a %1$s</string>
+    <string name="add_food_item">Añadir alimento</string>
+    <string name="copy_from_yesterday">Copiar de ayer</string>
+    <string name="copy_from_previous_day">Copiar del día anterior</string>
+    <plurals name="entries_copied">
+        <item quantity="one">%1$d elemento copiado</item>
+        <item quantity="other">%1$d elementos copiados</item>
+        <item quantity="many">%1$d de elementos copiados</item>
+    </plurals>
+    <string name="search_adding_to_meal">Añadiendo a %1$s</string>
+
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="edit">Editar</string>
+    <string name="log_food">Registrar alimento</string>
+    <string name="loading">Cargando\u2026</string>
+
+    <string name="back_cd">Atrás</string>
+    <string name="delete_cd">Eliminar</string>
+    <string name="clear_cd">Borrar</string>
+
+    <string name="search_hint">Buscar alimentos\u2026</string>
+    <string name="no_results">No se encontraron resultados</string>
+
+    <string name="scan_guide_hint">Mantenga el código de barras horizontal dentro del marco</string>
+    <string name="grant_permission">Conceder permiso</string>
+    <string name="looking_up_barcode">Buscando %1$s\u2026</string>
+    <string name="add_manually">Añadir manualmente</string>
+    <string name="scan_again">Escanear de nuevo</string>
+    <string name="camera_permission_required">Se requiere permiso de cámara para escanear códigos de barras</string>
+    <string name="barcode_not_found">Código de barras no encontrado en la base de datos</string>
+
+    <string name="amount_grams">Cantidad (g)</string>
+    <string name="meal">Comida</string>
+    <string name="nutrition_for_grams">Nutrición para %1$dg</string>
+
+    <string name="food_name_label">Nombre del alimento</string>
+    <string name="protein_g">Proteínas (g)</string>
+    <string name="fat_g">Grasas (g)</string>
+    <string name="carbs_g">Carbohidratos (g)</string>
+    <string name="calories_kcal">Calorías (kcal)</string>
+
+    <string name="no_history">Sin historial aún. ¡Empieza a registrar!</string>
+
+    <string name="daily_goals">Objetivos diarios</string>
+    <string name="save_goals">Guardar objetivos</string>
+    <string name="goals_saved">¡Objetivos guardados!</string>
+
+    <string name="export_csv">Exportar a CSV</string>
+    <string name="export_csv_subtitle">Guardar todos los datos de registro como archivo CSV</string>
+    <string name="dark_mode">Modo oscuro</string>
+    <string name="about">Acerca de</string>
+    <string name="about_subtitle">%1$s v%2$s: Sin conexión de forma predeterminada, sin cuentas, sin seguimiento</string>
+    <string name="serving_size">Tamaño de ración</string>
+    <string name="amount">Cantidad</string>
+    <string name="daily_target">Objetivo diario</string>
+    <string name="food_logged">Alimento registrado</string>
+    <string name="goal_saved">Objetivo guardado</string>
+
+    <string name="language">Idioma</string>
+    <string name="language_system">Predeterminado del sistema</string>
+    <string name="language_en">English</string>
+    <string name="language_nb">Norsk Bokmål</string>
+    <string name="language_pt">Português</string>
+    <string name="language_fr">Français</string>
+    <string name="language_de">Deutsch</string>
+    <string name="language_es">Español</string>
+    <string name="language_sv">Svenska</string>
+    <string name="language_it">Italiano</string>
+    <string name="language_nl">Nederlands</string>
+    <string name="language_da">Dansk</string>
+    <string name="language_fi">Suomi</string>
+
+    <!-- Portion names, translated from the database's canonical tokens. Unknown portions show the raw label. -->
+    <string name="portion_serving">porción</string>
+    <string name="portion_cup">taza</string>
+    <string name="portion_tablespoon">cucharada</string>
+    <string name="portion_teaspoon">cucharadita</string>
+    <string name="portion_slice">rebanada</string>
+    <string name="portion_piece">trozo</string>
+    <string name="portion_unit">unidad</string>
+    <string name="portion_bar">barra</string>
+    <string name="portion_bottle">botella</string>
+    <string name="portion_can">lata</string>
+    <string name="portion_package">paquete</string>
+    <string name="portion_small">pequeño</string>
+    <string name="portion_medium">mediano</string>
+    <string name="portion_large">grande</string>
+    <string name="portion_steak">bistec</string>
+    <string name="portion_roast">asado</string>
+    <string name="portion_fillet">filete</string>
+    <string name="portion_jar">tarro</string>
+    <string name="portion_extra_small">muy pequeño</string>
+    <string name="portion_extra_large">muy grande</string>
+    <string name="mass_unit_title">Peso y altura</string>
+    <string name="mass_unit_metric">Kilogramos y centímetros</string>
+    <string name="mass_unit_imperial_us">Libras, pies y pulgadas (EE. UU.)</string>
+    <string name="mass_unit_imperial_uk">Stones, pies y pulgadas (Reino Unido)</string>
+    <string name="energy_unit_title">Unidad de energía</string>
+    <string name="energy_unit_kcal">Kilocalorías (kcal)</string>
+    <string name="energy_unit_kj">Kilojulios (kJ)</string>
+
+    <string name="nav_diary">Diario</string>
+    <string name="nav_search">Buscar</string>
+    <string name="nav_scan">Escanear</string>
+    <string name="add_favorite_cd">Añadir a favoritos</string>
+    <string name="remove_favorite_cd">Quitar de favoritos</string>
+    <string name="previous_day_cd">Día anterior</string>
+    <string name="next_day_cd">Día siguiente</string>
+    <string name="jump_to_date_cd">Ir a una fecha</string>
+    <string name="jump_to_today_cd">Ir a hoy</string>
+    <string name="calorie_summary_cd">%1$d de %2$d kilocalorías, %3$d restantes</string>
+    <string name="macro_progress_cd">%1$d de %2$d gramos</string>
+    <string name="macro_breakdown_cd">%1$d gramos de proteína, %2$d gramos de grasa, %3$d gramos de carbohidratos</string>
+    <string name="nothing_logged_this_day">Aún no se ha registrado nada este día.</string>
+    <string name="today_label">Hoy</string>
+    <string name="logging_for_date">Registrando para %1$s</string>
+    <string name="no_results_in_database">No hay nada en %1$s que coincida con eso.</string>
+    <string name="no_results_in_database_language">%1$s está escrito en %2$s. Prueba esa palabra en %2$s.</string>
+    <string name="no_results_widen">Buscar en todas las bases de datos</string>
+    <string name="results_borrowed">Nada en %1$s. Se muestran otras bases de datos en tu idioma.</string>
+    <string name="search_to_get_started">Busca un alimento para empezar. Los alimentos que registres aparecerán aquí.</string>
+    <string name="add_query_manually">Añadir «%1$s» manualmente</string>
+    <string name="data_sources">Fuentes de datos</string>
+    <string name="data_sources_subtitle">De dónde proceden los datos nutricionales y con qué licencias se publican</string>
+    <string name="data_sources_intro">Los datos nutricionales de esta aplicación proceden de tablas nacionales de composición de alimentos y de Open Food Facts. Cada una se acredita a continuación según los términos en los que se publica.</string>
+    <string name="generic_food_database">Base de datos genérica de alimentos</string>
+    <string name="country_system">Predeterminado del sistema</string>
+    <string name="country_system_resolved">Actualmente equivale a %1$s.</string>
+    <string name="database_language">Los nombres de los alimentos se muestran en %1$s.</string>
+    <string name="generic_database_explainer">Se usa para alimentos genéricos. Los productos de marca de Open Food Facts siguen disponibles. Se establece automáticamente en el primer inicio, salvo que el idioma y el operador móvil de tu teléfono no coincidan. En ese caso, se te preguntará una vez.</string>
+    <string name="choose_database_title">¿Qué base de datos de alimentos?</string>
+    <string name="choose_database_body">Tu base de datos de alimentos podría ser %1$s o %2$s. Elige la que coincida con el lugar donde realmente compras. Puedes cambiarlo en cualquier momento en Ajustes.</string>
+    <string name="choose_database_confirm">Usar esta base de datos</string>
+    <string name="choose_database_skip">Decidir más tarde</string>
+    <string name="country_us">Estados Unidos</string>
+    <string name="country_fr">Francia</string>
+    <string name="country_de">Alemania</string>
+    <string name="country_es">España</string>
+    <string name="country_uk">Reino Unido</string>
+    <string name="country_au">Australia</string>
+    <string name="country_ca">Canadá</string>
+    <string name="country_ch">Suiza</string>
+    <string name="country_dk">Dinamarca</string>
+    <string name="country_fi">Finlandia</string>
+    <string name="country_nl">Países Bajos</string>
+    <string name="country_no">Noruega</string>
+    <string name="country_nz">Nueva Zelanda</string>
+    <string name="country_pt">Portugal</string>
+    <string name="country_se">Suecia</string>
+    <string name="undo">Deshacer</string>
+    <string name="entry_deleted">Entrada eliminada</string>
+    <string name="per_100g">por 100 g</string>
+    <string name="export_nothing">Aún no hay nada que exportar</string>
+    <string name="export_failed">Error al exportar</string>
+    <string name="go_back">Volver</string>
+    <string name="energy_kcal">kcal</string>
+    <string name="energy_kj">kJ</string>
+    <string name="millilitres_short">ml</string>
+    <string name="ounces_short">oz</string>
+    <string name="nutrition_for">Información nutricional para %1$s (%2$d g)</string>
+    <string name="nutrition_for_amount">Información nutricional para %1$s</string>
+    <string name="food_unavailable">Este alimento ya no está disponible</string>
+    <string name="food_unavailable_detail">Se eliminó al actualizarse la base de datos de alimentos, o se borró de tus propios alimentos. Las comidas que ya has registrado no se ven afectadas. Conservan su propia copia de los valores nutricionales.</string>
+    <string name="value_must_be_zero_or_more">Introduce un número de cero o más.</string>
+    <string name="amount_unit_not_convertible">No se conoce el peso de este alimento en esa unidad. Elige otra unidad.</string>
+    <string name="value_looks_unusually_large">Esa es una cantidad muy grande. Conviene comprobarla de nuevo.</string>
+    <string name="energy_does_not_match_macros">Estos macros equivalen a unas %1$d kcal.</string>
+    <string name="carb_label_includes_fibre">carbo. incl. fibra</string>
+    <string name="nutrient_trace">trazas</string>
+    <string name="carb_label_monosaccharide">carbo., equiv. azúcar</string>
+
+    <!-- The goal calculator's sheet, and the low-target messages. -->
+    <string name="help_me_pick">Ayúdame a elegir un objetivo</string>
+    <string name="goal_wizard_title">Estimar un objetivo</string>
+    <string name="goal_wizard_intro">Responde lo que puedas. Puedes editar los números antes de guardar.</string>
+    <string name="weight_kg">Peso (kg)</string>
+    <string name="weight_lb">Peso (lb)</string>
+    <string name="height_cm">Altura (cm)</string>
+    <!-- Unit symbols, untranslated on purpose: see values/strings.xml. -->
+    <string name="weight_stone">st</string>
+    <string name="weight_pounds">lb</string>
+    <string name="height_feet">ft</string>
+    <string name="height_inches">in</string>
+    <string name="age_years">Edad (años)</string>
+    <string name="sex_label">Sexo</string>
+    <string name="sex_female">Mujer</string>
+    <string name="sex_male">Hombre</string>
+    <string name="sex_unspecified">Sin especificar</string>
+    <string name="sex_explainer">Se usa solo para estimar el metabolismo basal. Sin especificar promedia los dos valores que ofrece la ecuación.</string>
+    <string name="sex_unused">No se usa mientras haya un porcentaje de grasa corporal. Bórralo para usar este campo.</string>
+    <string name="body_fat_percent">Porcentaje de grasa corporal</string>
+    <string name="body_fat_optional">Opcional. Si lo conoces, sustituye a la pregunta anterior y da una estimación mejor.</string>
+    <string name="activity_level">Actividad</string>
+    <string name="activity_sedentary">Sedentario</string>
+    <string name="activity_light">Poco activo</string>
+    <string name="activity_moderate">Moderadamente activo</string>
+    <string name="activity_active">Activo</string>
+    <string name="activity_very_active">Muy activo</string>
+    <string name="goal_direction">Objetivo</string>
+    <string name="goal_lose">Perder peso</string>
+    <string name="goal_maintain">Mantener</string>
+    <string name="goal_gain">Ganar peso</string>
+    <string name="rate_kg_per_week">Ritmo (kg por semana)</string>
+    <string name="rate_lb_per_week">Ritmo (lb por semana)</string>
+    <string name="goal_wizard_result">Unas %1$d kcal al día</string>
+    <string name="goal_wizard_estimate_mifflin">Estimado con la ecuación de Mifflin-St Jeor. Contrástalo con la báscula durante unas semanas.</string>
+    <string name="goal_wizard_estimate_katch">Estimado con la ecuación de Katch-McArdle, que usa la masa magra en lugar del sexo. Contrástalo con la báscula durante unas semanas.</string>
+    <string name="use_these_targets">Usar estos objetivos</string>
+    <string name="calories_below_safe_minimum">Los objetivos por debajo de %1$d kcal al día requieren supervisión médica, así que esta aplicación no los establece.</string>
+    <string name="calories_below_floor">Por debajo de %1$d kcal al día es difícil obtener suficientes vitaminas y minerales de la comida.</string>
+
+    <!-- Open Food Facts lookup. Off by default; never automatic. -->
+    <string name="off_lookup_title">¿Buscar en Open Food Facts?</string>
+    <string name="off_lookup_offer">Buscar esto en Open Food Facts</string>
+    <string name="off_lookup_explainer">Open Food Facts es una base de datos de productos alimenticios libre y abierta. Si activas esto, la aplicación puede consultarle un código de barras que este teléfono no reconoce.\n\nSolo se envía el número del código de barras a Open Food Facts, y solo cuando pulsas el botón. Esa solicitud no incluye ninguna cuenta, identificador publicitario ni datos del diario.\n\nPuedes desactivarlo de nuevo en Ajustes.</string>
+    <string name="off_lookup_enable">Activar</string>
+    <string name="look_up_online">Buscar en Open Food Facts</string>
+    <string name="off_lookup_nothing_found">Open Food Facts tampoco tiene datos utilizables para este código de barras.</string>
+    <string name="off_lookup_unavailable">No se pudo conectar con Open Food Facts. Comprueba tu conexión o añade el alimento manualmente.</string>
+    <string name="off_lookup_running">Contactando con Open Food Facts…</string>
+    <string name="settings_off_lookup">Buscar códigos de barras desconocidos en línea</string>
+    <string name="settings_off_lookup_summary">Consultar a Open Food Facts un código de barras que este teléfono no reconoce. Envía solo el código de barras, y solo cuando pulsas el botón tras un escaneo sin resultado. Desactivado de forma predeterminada.</string>
+    <!-- Anadir un producto y contribuirlo (tarea 067). Desactivado de forma predeterminada; nunca automatico. -->
+    <string name="add_product">Añadir producto</string>
+    <string name="barcode_label">Código de barras: %1$s</string>
+    <string name="brand_label">Marca (opcional)</string>
+    <string name="per_100g_header">Por 100 g</string>
+    <string name="save_product">Guardar producto</string>
+    <string name="contribute_to_off">Enviar también a Open Food Facts</string>
+    <string name="contribute_to_off_detail">Publica este producto en Open Food Facts para que otras personas también puedan encontrarlo. Envía mediante Lethio el código de barras, el nombre, la marca y los valores de arriba, además de un identificador aleatorio de la aplicación utilizado para moderar contribuciones. No envía tu diario.</string>
+    <string name="contribute_not_sent_title">No añadido a Open Food Facts</string>
+    <string name="contribute_unconfirmed_title">Contribución no confirmada</string>
+    <string name="contribute_sent_title">Enviado a Open Food Facts</string>
+    <string name="contribute_accepted">Gracias: este producto ya está en la base de datos abierta para todo el mundo.</string>
+    <string name="continue_to_log">Continuar</string>
+    <string name="contribute_refused">Este producto no fue aceptado como contribución. Está guardado en tu teléfono y puedes seguir usándolo con normalidad.</string>
+    <string name="contribute_unavailable">No se pudo confirmar si Open Food Facts recibió este producto. Está guardado en tu teléfono. Comprueba Open Food Facts antes de intentarlo de nuevo.</string>
+    <string name="settings_off_contribute">Contribuir productos nuevos</string>
+    <string name="settings_off_contribute_summary">Permite que la aplicación ofrezca compartir un producto con Open Food Facts cuando no haya una entrada utilizable para ese código de barras. Tú decides sobre cada producto mediante una casilla que empieza desmarcada. Desactivado de forma predeterminada e independiente de la búsqueda en línea.</string>
+    <string name="ok">Aceptar</string>
+    <string name="searching_announcement">Buscando</string>
+    <plurals name="search_results_count">
+        <item quantity="one">%1$d resultado</item>
+        <item quantity="other">%1$d resultados</item>
+        <item quantity="many">%1$d de resultados</item>
+    </plurals>
+    <string name="software_licenses">Licencias de software</string>
+    <string name="diary_back_to_today">Volver a hoy</string>
+    <string name="diary_past_entry_date">Entrada anterior · %1$s</string>
+    <string name="diary_add_to_date">Añadir al diario · %1$s</string>
+
+    <!-- Diary history -->
+    <string name="diary_history">Historial</string>
+    <string name="diary_history_intake">Ingesta registrada</string>
+    <string name="diary_history_summary">%1$d de %2$d días registrados · media %3$s</string>
+    <string name="diary_history_summary_target">objetivo %1$s</string>
+    <string name="diary_history_7_days">7 días</string>
+    <string name="diary_history_28_days">28 días</string>
+    <string name="diary_history_energy">Energía</string>
+    <string name="diary_history_no_entries">Sin entradas</string>
+    <string name="diary_history_failed">No se pudo cargar el historial.</string>
+    <string name="diary_history_retry">Reintentar</string>
+    <string name="saved_goals">Objetivos guardados</string>
+    <string name="edit_saved_goals">Editar objetivos</string>
+    <string name="goals_from">Desde el %1$s</string>
+    <string name="goals_range">%1$s – %2$s</string>
+    <string name="goals_range_note">Los cambios se aplican a este intervalo de fechas. Las entradas de alimentos no cambian.</string>
+    <string name="goals_new_note">Los nuevos objetivos se aplican desde hoy.</string>
+    <string name="delete_goals_title">¿Eliminar los objetivos guardados?</string>
+    <string name="delete_goals_note">Este intervalo usará los objetivos guardados anteriores o los predeterminados si no hay ninguno. Las entradas de alimentos no cambian.</string>
+    <string name="no_saved_goals">No hay objetivos guardados para esta fecha.</string>
+    <string name="goals_load_failed">No se han podido cargar los objetivos. Vuelve a intentarlo.</string>
+    <string name="goals_change_failed">No se han podido cambiar los objetivos. Vuelve a intentarlo o ábrelos de nuevo si han cambiado en otro lugar.</string>
+    <string name="target_max">Introduce %1$s o menos.</string>
+    <string name="day_options">Opciones del día</string>
+    <string name="clear_entries">Borrar entradas</string>
+    <string name="clear_entries_title">¿Borrar las entradas del %1$s?</string>
+    <string name="clear_entries_note">Se eliminarán todas las entradas de alimentos de esta fecha. Los objetivos, el peso y los alimentos guardados no cambian.</string>
+    <string name="entries_cleared">Entradas borradas</string>
+    <string name="entries_change_failed">No se han podido cambiar las entradas. Vuelve a intentarlo.</string>
+</resources>
