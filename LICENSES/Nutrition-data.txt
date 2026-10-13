@@ -1,93 +1,117 @@
-Nutrition data licenses and attribution
+Nutrition data: references, terms and required notices
 
-Open Food Facts (https://world.openfoodfacts.org/data)
-Open Food Facts contributors; ODbL 1.0 (https://opendatacommons.org/licenses/odbl/1-0/), with attribution, share-alike, and access obligations. See the publisher's licensing guidance (https://openfoodfacts.github.io/documentation/docs/Product-Opener/api/tutorials/license-be-on-the-legal-side/).
-Individual database contents use the Database Contents License (https://opendatacommons.org/licenses/dbcl/1-0/).
+Each source below has a reference in one style (ISO 690, the form INSA uses for its own table), the
+terms the data is used under, and, where the publisher prescribes one, the notice it requires,
+quoted word for word. The access date is the day the data in this release was downloaded. Where a
+publisher states no publication year, none is given.
 
-USDA FoodData Central (https://fdc.nal.usda.gov/download-datasets/)
-U.S. Department of Agriculture; public domain, published under CC0. USDA requests attribution to FoodData Central; see data licensing (https://fdc.nal.usda.gov/api-guide/).
 
-BLS 4.0 (https://www.blsdb.de/)
-Max Rubner-Institut; CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+Open Food Facts
 
-CoFID 2021 (https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid)
-McCance and Widdowson's The Composition of Foods Integrated Dataset; Open Government Licence v3.0 (https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).
+Reference: Open Food Facts contributors. Open Food Facts [online database]. Open Food Facts, 2026 [consult. 2026-08-17]. Available at: https://world.openfoodfacts.org/data
+Terms: ODbL 1.0 (https://opendatacommons.org/licenses/odbl/1-0/), with attribution, share-alike and access obligations; individual contents under the Database Contents License (https://opendatacommons.org/licenses/dbcl/1-0/). See the publisher's licensing guidance (https://openfoodfacts.github.io/documentation/docs/Product-Opener/api/tutorials/license-be-on-the-legal-side/).
+Required notice: "Contains information from Open Food Facts, which is made available under the Open Database License (ODbL)."
 
-ANSES-Ciqual (https://ciqual.anses.fr/)
-ANSES; Licence Ouverte / Etalab 2.0. Preserve the license supplied with the downloaded release; see Etalab's license (https://www.etalab.gouv.fr/licence-ouverte-open-licence/).
 
-AFCD Release 3 (https://www.foodstandards.gov.au/science-data/monitoringnutrients/afcd)
-Food Standards Australia New Zealand; Data User Licence Agreement (https://www.foodstandards.gov.au/science-data/monitoringnutrients/afcd/datauserlicenceagreement), based on CC BY-SA 3.0 AU with additional required notices.
+USDA FoodData Central
 
-Canadian Nutrient File 2026 (https://open.canada.ca/data/en/dataset/1b6139bd-ed7e-4043-bc28-ff00e10f3109)
-Health Canada; Open Government Licence – Canada (https://open.canada.ca/en/open-government-licence-canada).
+Reference: U.S. Department of Agriculture, Agricultural Research Service. FoodData Central: Foundation Foods [dataset]. Version current: April 2026 [consult. 2026-08-17]. Available at: https://fdc.nal.usda.gov/
+Reference: U.S. Department of Agriculture, Agricultural Research Service. FoodData Central: SR Legacy [dataset]. April 2018 [consult. 2026-08-17]. Available at: https://fdc.nal.usda.gov/
+Terms: public domain, published under CC0. USDA requests attribution to FoodData Central; see data licensing (https://fdc.nal.usda.gov/api-guide/).
 
-Fineli (https://fineli.fi/fineli/en/ohje/19)
-Finnish Institute for Health and Welfare (THL); CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Retain the copyright notice supplied with the data release.
 
-Frida (https://frida.fooddata.dk/)
-DTU National Food Institute; publisher terms permitting use with source credit. Do not infer a right to relicense the data under MIT or ODbL.
+Bundeslebensmittelschlüssel (BLS) 4.0
 
-Livsmedelsdatabasen (https://www.livsmedelsverket.se/en/about-us/psidata/food-composition-data)
-Swedish Food Agency / Livsmedelsverket; CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). State the agency as the source.
+Reference: Max Rubner-Institut. Bundeslebensmittelschlüssel (BLS), Version 4.0 [dataset]. Max Rubner-Institut, 2025 [consult. 2026-08-19]. Available at: https://www.blsdb.de/
+Terms: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
 
-Matvaretabellen (https://www.matvaretabellen.no/en/)
-Norwegian Food Safety Authority / Mattilsynet; Norwegian Licence for Open Government Data 2.0 (https://data.norge.no/nlod/en/2.0).
 
-Swiss Food Composition Database (https://naehrwertdaten.ch/)
-Federal Food Safety and Veterinary Office (FSVO); publisher terms permitting use, including commercial use, with source credit. These are not a grant to relicense the source as MIT.
+McCance and Widdowson's The Composition of Foods Integrated Dataset (CoFID) 2021
 
-Tabela da Composição de Alimentos (TCA) v 7.1 (https://portfir.insa.min-saude.pt/pt/)
-Instituto Nacional de Saúde Doutor Ricardo Jorge (INSA); publisher terms require visible source attribution. Retain the release version in the credit. Reference requested by INSA: "Instituto Nacional de Saúde Doutor Ricardo Jorge, I. P.- INSA. Tabela da Composição de Alimentos, v 7.1 [base de dados online]. Lisboa. 2026, [data de consulta: 2026-08-23]. Disponível em: https://portfir.insa.min-saude.pt/pt/"
+Reference: Public Health England. McCance and Widdowson's The Composition of Foods Integrated Dataset 2021 [dataset]. Public Health England, 2021 [consult. 2026-08-23]. Available at: https://www.gov.uk/government/publications/composition-of-foods-integrated-dataset-cofid
+Terms: Open Government Licence v3.0 (https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).
+Required notice: "Contains public sector information licensed under the Open Government Licence v3.0."
 
-BEDCA (https://www.bedca.net/)
-AESAN / Consorcio BEDCA; restricted terms, including non-commercial use and attribution. Do not treat it as open-source data or assume permission to modify or redistribute transformed records. Obtain the publisher's permission where required.
 
-Open Food Facts:
+ANSES-Ciqual French food composition table 2025
 
-Contains information from Open Food Facts, which is made available under the Open Database License (ODbL).
+Reference: ANSES. Ciqual French food composition table 2025 [online database]. ANSES, 2025 [consult. 2026-08-17]. Available at: https://ciqual.anses.fr/
+Terms: Licence Ouverte / Etalab 2.0 (https://www.etalab.gouv.fr/licence-ouverte-open-licence/). Preserve the licence supplied with the downloaded release.
 
-USDA:
 
-U.S. Department of Agriculture, Agricultural Research Service. FoodData Central. SR Legacy, April 2018.
+Australian Food Composition Database (AFCD), Release 3
 
-CoFID:
+Reference: Food Standards Australia New Zealand. Australian Food Composition Database – Release 3 [dataset]. FSANZ, December 2025 [consult. 2026-08-23]. Available at: https://www.foodstandards.gov.au/science-data/monitoringnutrients/afcd
+Terms: Data User Licence Agreement (https://www.foodstandards.gov.au/science-data/monitoringnutrients/afcd/datauserlicenceagreement), based on CC BY-SA 3.0 AU. It requires the licence link, retained notices, identification of modifications, share-alike treatment of derived work, and the two statements below.
+Required notices:
+"There are limitations associated with food composition databases. Food composition data used in the database or databases may represent an average of the nutrient content of a particular sample of foods and ingredients, determined at a particular time. The nutrient composition of foods and ingredients can vary substantially between batches and brands because of a number of factors, including changes in season, processing practices and ingredient source, and methods of calculation."
+"the Work is based on Australian data and Australia data may not be appropriate for use in other countries"
+Modifications: Names and units have been normalized, aliases and search indexes added, and records with invalid nutrition values omitted.
 
-Contains public sector information licensed under the Open Government Licence v3.0.
 
-Canadian Nutrient File:
+Canadian Nutrient File (CNF) 2026
 
-Contains information licensed under the Open Government Licence – Canada.
+Reference: Health Canada. Canadian Nutrient File 2026 [dataset]. Health Canada, 2026 [consult. 2026-08-23]. Available at: https://open.canada.ca/data/en/dataset/1b6139bd-ed7e-4043-bc28-ff00e10f3109
+Terms: Open Government Licence – Canada (https://open.canada.ca/en/open-government-licence-canada).
+Required notice: "Contains information licensed under the Open Government Licence – Canada."
 
-Fineli Release 20, notice supplied with the source data:
 
-Copyright 2015 National Institute for Health and Welfare (THL). Licence: Creative Commons Attribution 4.0 (CC-BY 4.0).
+Fineli, Release 20
 
-Frida 6.1:
+Reference: Finnish Institute for Health and Welfare (THL). Fineli – Finnish food composition database, Release 20.0 [dataset]. THL [consult. 2026-08-23]. Available at: https://fineli.fi/fineli/en/avoin-data
+Terms: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); see https://fineli.fi/fineli/en/ohje/19. Retain the copyright notice supplied with the release.
+Required notice, as supplied with the data: "Copyright 2015 National Institute for Health and Welfare (THL). Licence: Creative Commons Attribution 4.0 (CC-BY 4.0)."
 
-© The Danish Food Composition Database (http://fcdb.fooddata.dk), version 6.1, May 2026.
 
-Matvaretabellen:
+Frida, the Danish Food Composition Database, version 6.1
 
-Contains data under the Norwegian licence for Open Government data (NLOD) distributed by Mattilsynet.
+Reference, as the publisher suggests it: The Danish Food Composition Database (http://fcdb.fooddata.dk), version 6.1, May 2026. The Food Institute, Technical University of Denmark [consult. 2026-08-23]. Dataset: https://doi.org/10.11583/DTU.32312844
+Terms: CC BY 4.0, as stated in the copyright sheet of the version 6.1 dataset. Data may not be reproduced without clear source information.
+Required notice (the publisher's short form): "© The Danish Food Composition Database (http://fcdb.fooddata.dk), version 6.1, May 2026."
 
-BEDCA:
 
-AESAN/BEDCA Base de Datos Española de Composición de Alimentos v1.0 (2010)
+Livsmedelsdatabasen
 
-Australian Food Composition Database notices
+Reference: Swedish Food Agency (Livsmedelsverket). Livsmedelsdatabasen [online database]. Livsmedelsverket, 2026 [consult. 2026-08-23]. Available at: https://www.livsmedelsverket.se/en/about-us/psidata/food-composition-data
+Terms: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). The Swedish Food Agency must be stated as the source.
 
-Credit Food Standards Australia New Zealand and the Australian Food Composition
-Database, Release 3. Its Data User Licence Agreement (https://www.foodstandards.gov.au/science-data/monitoringnutrients/afcd/datauserlicenceagreement)
-requires the license link, retained notices, identification of modifications,
-share-alike treatment of derived work, and the following statements:
 
-There are limitations associated with food composition databases. Food composition data used in the database or databases may represent an average of the nutrient content of a particular sample of foods and ingredients, determined at a particular time. The nutrient composition of foods and ingredients can vary substantially between batches and brands because of a number of factors, including changes in season, processing practices and ingredient source, and methods of calculation.
+Matvaretabellen
 
-the Work is based on Australian data and Australia data may not be appropriate for use in other countries
+Reference: Norwegian Food Safety Authority (Mattilsynet). Matvaretabellen [online database]. Mattilsynet [consult. 2026-08-23]. Available at: https://www.matvaretabellen.no/en/
+Terms: Norwegian Licence for Open Government Data 2.0 (https://data.norge.no/nlod/en/2.0).
+Required notice: "Contains data under the Norwegian licence for Open Government data (NLOD) distributed by Mattilsynet."
 
-NEVO online, version 2025/9.0 (https://www.rivm.nl/en/dutch-food-composition-database)
-RIVM (National Institute for Public Health and the Environment, Netherlands); RIVM conditions for use of NEVO online version 2025/9.0. Required credit: "NEVO online, version 2025/9.0. RIVM, Bilthoven." Values the app calculates from it are credited "Based on data from NEVO online version 2025/9.0, RIVM, Bilthoven and other data sources".
 
-New Zealand FOODfiles 2024, version 1 (https://www.foodcomposition.co.nz/)
-Required credit: "FOODfiles 2024 v1. © The New Zealand Institute for Plant & Food Research Limited and the Ministry of Health (New Zealand), 2024. Provided by The Bioeconomy Science Institute and the Ministry of Health (New Zealand). Access to and use or supply of this data is subject to the New Zealand Food Composition Database terms of use." Terms: https://www.foodcomposition.co.nz/terms/
+Swiss Food Composition Database, version 7.1
+
+Reference: Federal Food Safety and Veterinary Office (FSVO). Swiss Food Composition Database, version 7.1 [dataset]. FSVO, 2026 [consult. 2026-08-23]. Available at: https://naehrwertdaten.ch/
+Terms: publisher terms permitting use, including commercial use, with source credit. These are not a grant to relicense the data as MIT.
+
+
+Tabela da Composição de Alimentos (TCA), v 7.1
+
+Reference, in the form INSA asks for: Instituto Nacional de Saúde Doutor Ricardo Jorge, I. P.- INSA. Tabela da Composição de Alimentos, v 7.1 [base de dados online]. Lisboa. 2026, [consult. 2026-08-23]. Disponível em: https://portfir.insa.min-saude.pt/pt/
+Terms: INSA's terms of use require the source to be stated visibly wherever the data is displayed. Retain the release version in the credit.
+
+
+BEDCA, Base de Datos Española de Composición de Alimentos
+
+Reference: AESAN/BEDCA. Base de Datos Española de Composición de Alimentos, v1.0 [online database]. 2010 [consult. 2026-08-26]. Available at: https://www.bedca.net/
+Terms: restricted, including non-commercial use and attribution. Do not treat it as open-source data or assume permission to modify or redistribute transformed records. Obtain the publisher's permission where required.
+Required notice: "AESAN/BEDCA Base de Datos Española de Composición de Alimentos v1.0 (2010)"
+
+
+NEVO online, version 2025/9.0
+
+Reference: RIVM. NEVO online, version 2025/9.0 [online database]. Bilthoven: RIVM, 2025 [consult. 2026-10-07]. Available at: https://www.rivm.nl/en/dutch-food-composition-database
+Terms: RIVM conditions for use of NEVO online version 2025/9.0.
+Required notice: "NEVO online, version 2025/9.0. RIVM, Bilthoven."
+Required notice on values the app calculates from it: "Based on data from NEVO online version 2025/9.0, RIVM, Bilthoven and other data sources"
+
+
+New Zealand FOODfiles 2024, version 1
+
+Reference: The New Zealand Institute for Plant & Food Research Limited and Ministry of Health (New Zealand). FOODfiles 2024, version 1 [dataset]. 2024 [consult. 2026-10-07]. Available at: https://www.foodcomposition.co.nz/
+Terms: New Zealand Food Composition Database terms of use (https://www.foodcomposition.co.nz/terms/).
+Required notice: "FOODfiles 2024 v1. © The New Zealand Institute for Plant & Food Research Limited and the Ministry of Health (New Zealand), 2024. Provided by The Bioeconomy Science Institute and the Ministry of Health (New Zealand). Access to and use or supply of this data is subject to the New Zealand Food Composition Database terms of use."
