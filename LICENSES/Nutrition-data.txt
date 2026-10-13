@@ -37,8 +37,8 @@ Norwegian Food Safety Authority / Mattilsynet; Norwegian Licence for Open Govern
 Swiss Food Composition Database (https://naehrwertdaten.ch/)
 Federal Food Safety and Veterinary Office (FSVO); publisher terms permitting use, including commercial use, with source credit. These are not a grant to relicense the source as MIT.
 
-TCA (https://portfir.insa.min-saude.pt/pt/)
-Instituto Nacional de Saúde Doutor Ricardo Jorge (INSA); publisher terms require visible source attribution. Retain the release version in the credit.
+Tabela da Composição de Alimentos (TCA) v 7.1 (https://portfir.insa.min-saude.pt/pt/)
+Instituto Nacional de Saúde Doutor Ricardo Jorge (INSA); publisher terms require visible source attribution. Retain the release version in the credit. Reference requested by INSA: "Instituto Nacional de Saúde Doutor Ricardo Jorge, I. P.- INSA. Tabela da Composição de Alimentos, v 7.1 [base de dados online]. Lisboa. 2026, [data de consulta: 2026-08-23]. Disponível em: https://portfir.insa.min-saude.pt/pt/"
 
 BEDCA (https://www.bedca.net/)
 AESAN / Consorcio BEDCA; restricted terms, including non-commercial use and attribution. Do not treat it as open-source data or assume permission to modify or redistribute transformed records. Obtain the publisher's permission where required.
@@ -70,10 +70,6 @@ Frida 6.1:
 Matvaretabellen:
 
 Contains data under the Norwegian licence for Open Government data (NLOD) distributed by Mattilsynet.
-
-TCA 7.1:
-
-Instituto Nacional de Saúde Doutor Ricardo Jorge, I. P.- INSA. Tabela da Composição de Alimentos, v 7.1 [base de dados online]. Lisboa. 2026, [data de consulta: 2026-08-23]. Disponível em: https://portfir.insa.min-saude.pt/pt/
 
 BEDCA:
 
