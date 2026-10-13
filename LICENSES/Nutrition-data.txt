@@ -1,9 +1,6 @@
 Nutrition data: references, terms and required notices
 
-Each source below has a reference in one style (ISO 690, the form INSA uses for its own table), the
-terms the data is used under, and, where the publisher prescribes one, the notice it requires,
-quoted word for word. The access date is the day the data in this release was downloaded. Where a
-publisher states no publication year, none is given.
+References follow ISO 690. The access date is the date the data was downloaded. Required notices are quoted as published.
 
 
 Open Food Facts
@@ -60,14 +57,14 @@ Fineli, Release 20
 
 Reference: Finnish Institute for Health and Welfare (THL). Fineli – Finnish food composition database, Release 20.0 [dataset]. THL [consult. 2026-08-23]. Available at: https://fineli.fi/fineli/en/avoin-data
 Terms: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); see https://fineli.fi/fineli/en/ohje/19. Retain the copyright notice supplied with the release.
-Required notice, as supplied with the data: "Copyright 2015 National Institute for Health and Welfare (THL). Licence: Creative Commons Attribution 4.0 (CC-BY 4.0)."
+Required notice: "Copyright 2015 National Institute for Health and Welfare (THL). Licence: Creative Commons Attribution 4.0 (CC-BY 4.0)."
 
 
 Frida, the Danish Food Composition Database, version 6.1
 
-Reference, as the publisher suggests it: The Danish Food Composition Database (http://fcdb.fooddata.dk), version 6.1, May 2026. The Food Institute, Technical University of Denmark [consult. 2026-08-23]. Dataset: https://doi.org/10.11583/DTU.32312844
+Reference: The Danish Food Composition Database (http://fcdb.fooddata.dk), version 6.1, May 2026. The Food Institute, Technical University of Denmark [consult. 2026-08-23]. Dataset: https://doi.org/10.11583/DTU.32312844
 Terms: CC BY 4.0, as stated in the copyright sheet of the version 6.1 dataset. Data may not be reproduced without clear source information.
-Required notice (the publisher's short form): "© The Danish Food Composition Database (http://fcdb.fooddata.dk), version 6.1, May 2026."
+Required notice: "© The Danish Food Composition Database (http://fcdb.fooddata.dk), version 6.1, May 2026."
 
 
 Livsmedelsdatabasen
@@ -91,7 +88,7 @@ Terms: publisher terms permitting use, including commercial use, with source cre
 
 Tabela da Composição de Alimentos (TCA), v 7.1
 
-Reference, in the form INSA asks for: Instituto Nacional de Saúde Doutor Ricardo Jorge, I. P.- INSA. Tabela da Composição de Alimentos, v 7.1 [base de dados online]. Lisboa. 2026, [consult. 2026-08-23]. Disponível em: https://portfir.insa.min-saude.pt/pt/
+Reference: Instituto Nacional de Saúde Doutor Ricardo Jorge, I. P.- INSA. Tabela da Composição de Alimentos, v 7.1 [base de dados online]. Lisboa. 2026, [consult. 2026-08-23]. Disponível em: https://portfir.insa.min-saude.pt/pt/
 Terms: INSA's terms of use require the source to be stated visibly wherever the data is displayed. Retain the release version in the credit.
 
 
