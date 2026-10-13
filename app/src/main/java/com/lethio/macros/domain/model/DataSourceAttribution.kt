@@ -196,12 +196,14 @@ data class DataSourceAttribution(
                     shortLabel = "TCA",
                     title = "Tabela da Composição de Alimentos v7.1 (2026)",
                     licence = "INSA terms of use — source must be visibly stated",
-                    // INSA's example wording. The version is part of the credit and changes yearly.
+                    // The reference INSA gave us, the access date being our download of v7.1. The
+                    // version is part of the credit and changes yearly.
                     required =
-                        "Fonte: Base de Dados da Composição de Alimentos. " +
-                            "Instituto Nacional de Saúde Doutor Ricardo Jorge, I. P.- INSA. " +
-                            "v 7.1 - 2026",
-                    url = "https://portfir-insa.min-saude.pt/",
+                        "Instituto Nacional de Saúde Doutor Ricardo Jorge, I. P.- INSA. " +
+                            "Tabela da Composição de Alimentos, v 7.1 [base de dados online]. " +
+                            "Lisboa. 2026, [data de consulta: 2026-08-23]. " +
+                            "Disponível em: https://portfir.insa.min-saude.pt/pt/",
+                    url = "https://portfir.insa.min-saude.pt/pt/",
                 ),
                 DataSourceAttribution(
                     source = DataSource.BEDCA,
